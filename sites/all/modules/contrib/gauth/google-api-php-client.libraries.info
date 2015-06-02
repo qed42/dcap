@@ -4,9 +4,9 @@ description = Provides classes for google oauth2 for php
 version = 1.0.6-beta5
 files[php][] = src/Google/Client.php
 
-; Information added by Drupal.org packaging script on 2014-07-22
-version = "7.x-1.4"
+; Information added by Drupal.org packaging script on 2014-08-28
+version = "7.x-1.4+1-dev"
 core = "7.x"
 project = "gauth"
-datestamp = "1406018340"
+datestamp = "1409253539"
 

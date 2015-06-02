@@ -61,7 +61,8 @@ function gauth_login_gauth_google_response() {
       $client->setClientSecret($client_secret);
       $client->setRedirectUri(url('gauth/response_handler', array('https' => TRUE, 'absolute' => TRUE)));
       $client->setDeveloperKey($api_key);
-      $client->addService('oauth2', 'v2');
+      $scopes = gauth_google_services_scopes();
+      $client->addScope($scopes['oauth2']);
       $client->authenticate($_GET['code']);
       $account['access_token'] = $client->getAccessToken();
 
@@ -72,8 +73,9 @@ function gauth_login_gauth_google_response() {
       $client->setRedirectUri(url('gauth/response_handler', array('https' => TRUE, 'absolute' => TRUE)));
       $client->setDeveloperKey($api_key);
       $client->setAccessToken($account['access_token']);
-      $client->addService('oauth2', 'v2');
-      $oauth = new Google_Oauth2Service($client);
+      $scopes = gauth_google_services_scopes();
+      $client->addScope($scopes['oauth2']);
+      $oauth = new Google_Service_Oauth2($client);
       $info = $oauth->userinfo->get();
       if ($uid = gauth_login_load_google_id($info['id'])) {
         $form_state['uid'] = $uid;
@@ -169,7 +171,8 @@ function gauth_login_user_login_submit() {
     $client->setClientSecret(variable_get('gauth_login_client_secret'));
     $client->setRedirectUri(url('gauth/response_handler', array('https' => TRUE, 'absolute' => TRUE)));
     $client->setDeveloperKey(variable_get('gauth_login_developer_key'));
-    $client->addService('oauth2', 'v2');
+    $scopes = gauth_google_services_scopes();
+    $client->addScope($scopes['oauth2']);
     if (!isset($_SESSION['gauth_login_state'])) {
       $state = md5(rand());
     }
