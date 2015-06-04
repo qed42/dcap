@@ -1,0 +1,4 @@
+name = Dcap Panel Layouts
+description = Module for defining the layouts for the panel pages used in the site.
+core = 7.x
+package = DCAP
