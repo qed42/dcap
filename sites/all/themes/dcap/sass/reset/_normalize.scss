@@ -57,8 +57,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-p{
-  line-height:1.5;
+p {
+  line-height: 1.5;
 }
 
 // Default css sidewide
@@ -66,7 +66,7 @@ p{
 a {
   text-decoration: none;
 }
-a:hover{
+a:hover {
   color: $dark-grey;
 }
 a.active ,
@@ -93,40 +93,39 @@ li a.active {
 :-ms-input-placeholder {
   color: $text-grey;
 }
-div.messages{
-  &.error{
-    color: $messages_error_text;
+
+/* -------------- System Messages ----------- */
+div.messages {
+  margin: 0;
+  &.error {
+    color: $white;
     background-color: $messages_error_bg;
-    li{
-      color: $messages_error_text;
+    li {
+      color: $white;
     }
   }
   ul {
     padding: 0;
-    li{
+    li {
       margin:0;
     }
   }
-  &.warning{
+  &.warning {
     color: $messages_warning_text;
     background-color: $messages_warning_bg;
-    li{
+    li {
       color: $messages_warning_text;
     }
   }
-  &.status{
+  &.status {
     color: $messages_status_text;
     background-color: $messages_status_bg;
-    li{
+    li {
       color: $messages_status_text;
     }
   }
 }
+
 .messages {
   margin: 0;
-}
-
-body {
-  font-family: 'ProximaNova';
-  line-height: 1.2;
 }

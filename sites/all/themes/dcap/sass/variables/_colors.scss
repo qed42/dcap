@@ -3,17 +3,19 @@ $grey: #747475;
 $light-grey: #acacac;
 $dark-grey: #6c6b6c;
 $greyish-white: #ebebeb;
-$white: #fbf9f9;
-$sky-blue: #8181fc
+$sky-blue: #8181fc;
 $red: #f3836b;
 $dark-red: #f04936;
 $dark-blue: #28289d;
 $green: #79c12e;
-$dark-green: #3e6a10
+$dark-green: #3e6a10;
 $light-orange: #e7941e;
 $orange: #ff6425;
 $yellow: #e7941e;
 $light-yellow: #feeb75;
+$purple: #dcdbeb;
+$dark-purple: #bdbddf;
+$light-white: #fffdfe;
 
 
 // We use these as default colors throughout
@@ -24,8 +26,9 @@ $success-color: #43ac6a;
 $warning-color: #f08a24;
 $info-color: #a0d3e8;
 $light-orange: #ffa323;
-$white: #ffffff;
-$black: #000000;
+$white: #fff;
+$black: #000;
+$text-grey: #acacac;
 
 //color for error messages
 $messages_error_text: $dark-red;
@@ -36,6 +39,19 @@ $messages_status_text: $dark-grey;
 $messages_status_bg: $greyish-white;
 
 
+//Colors of the site
+$nav-back: #edeef3;
+$nav-text: #848486;
+$nav-active: #7480e4;
+$nav-border-right: #e2e3e8;
+$mission-text: #858383;
+$mission-para: #696767;
+$student-div: #fbd564;
+$faculty-div: #7bc145;
+$mentor-div: #527ca6;
+$faculty-text: #3e6a11;
+$mentor-text: #29299d;
+$input-border: #7d7d7d;
 
 
 
