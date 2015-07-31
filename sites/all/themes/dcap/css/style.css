@@ -234,6 +234,45 @@ body {
 }
 
 /* ----------Footer--------- */
+.region-footer {
+  background: #2b2c2d;
+  overflow: hidden;
+}
+.region-footer .menu {
+  width: auto;
+  margin: 20px 20px 20px 50px;
+}
+.region-footer .menu li {
+  border-right: 1px solid #383a3b;
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+}
+.region-footer .menu li a {
+  cursor: pointer;
+  display: block;
+  height: 23px;
+  text-indent: -9999px;
+  width: 23px;
+}
+.region-footer .menu li a:hover {
+  color: #7480e4;
+}
+.region-footer .menu li.fb-icon a {
+  background: url("../images/grey-fb-icon.png") top left no-repeat;
+}
+.region-footer .menu li.twitter-icon a {
+  background: url("../images/grey-tw-icon.png") top left no-repeat;
+  width: 27px;
+}
+.region-footer .menu li.instagram-icon a {
+  background: url("../images/grey-inst-icon.png") top left no-repeat;
+}
+.region-footer .menu li.gplus-icon a {
+  background: url("../images/grey-g-plus-icon.png") top left no-repeat;
+  width: 26px;
+}
+
 .panel-2col-stacked .panel-col-top .inside,
 .panel-2col-stacked .panel-col-first .inside,
 .panel-2col-stacked .panel-col-last .inside {
@@ -395,6 +434,15 @@ body {
   font-family: 'proximanova-light';
   font-size: 24px;
   padding: 12px 46px;
+}
+
+.homepage-map {
+  overflow: hidden;
+  width: 100%;
+}
+.homepage-map img {
+  float: left;
+  width: 100%;
 }
 
 /* ----------Header--------- */

@@ -1,1 +1,47 @@
 /* ----------Footer--------- */
+.region-footer {
+  background: $footer-color;
+  overflow: hidden;
+  .menu {
+    width: auto;
+    margin: 20px 20px 20px 50px;
+    li {
+      border-right: 1px solid $footer-ul-color;
+      display: inline-block;
+      padding: 10px;
+      vertical-align: top;
+      a {
+        cursor: pointer;
+        display: block;
+        height: 23px;
+        text-indent: -9999px;
+        width: 23px;
+        &:hover {
+          color: $nav-active;
+        }
+      }
+      &.fb-icon {
+        a {
+          background: url('../images/grey-fb-icon.png') top left no-repeat;
+        }
+      }
+      &.twitter-icon {
+        a {
+          background: url('../images/grey-tw-icon.png') top left no-repeat;
+          width: 27px;
+        }
+      }
+      &.instagram-icon {
+        a {
+          background: url('../images/grey-inst-icon.png') top left no-repeat;
+        }
+      }
+      &.gplus-icon {
+        a {
+          background: url('../images/grey-g-plus-icon.png') top left no-repeat;
+          width: 26px;
+        }
+      }
+    }
+  }
+}
