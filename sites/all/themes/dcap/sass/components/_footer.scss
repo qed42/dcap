@@ -1,38 +1,47 @@
 /* ----------Footer--------- */
-
-//.front {
-  .region-footer {
-    //background: url(../images/truck.png) no-repeat;
-    background-size: 100% 100%;
-
-    position:relative;
-    @media #{$mobile}{
-      min-height: 250px;
-    }
-    @media #{$tab}{
-      min-height: 450px;
-    }
-    @media #{$desktop}{
-      min-height: 600px;
+.region-footer {
+  background: $footer-color;
+  overflow: hidden;
+  .menu {
+    width: auto;
+    margin: 20px 20px 20px 50px;
+    li {
+      border-right: 1px solid $footer-ul-color;
+      display: inline-block;
+      padding: 10px;
+      vertical-align: top;
+      a {
+        cursor: pointer;
+        display: block;
+        height: 23px;
+        text-indent: -9999px;
+        width: 23px;
+        &:hover {
+          color: $nav-active;
+        }
+      }
+      &.fb-icon {
+        a {
+          background: url('../images/grey-fb-icon.png') top left no-repeat;
+        }
+      }
+      &.twitter-icon {
+        a {
+          background: url('../images/grey-tw-icon.png') top left no-repeat;
+          width: 27px;
+        }
+      }
+      &.instagram-icon {
+        a {
+          background: url('../images/grey-inst-icon.png') top left no-repeat;
+        }
+      }
+      &.gplus-icon {
+        a {
+          background: url('../images/grey-g-plus-icon.png') top left no-repeat;
+          width: 26px;
+        }
+      }
     }
   }
-  #block-block-1 {
-    text-align: right;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    h2 {
-      text-transform: uppercase;
-      color: white;
-      @media #{$mobile}{font-size: 11px;}
-      @media #{$tab}{font-size: 14px;}
-      @media #{$desktop}{font-size: 20px;}
-    }
-    p {
-      color: white;
-      @media #{$mobile}{font-size: 10px;}
-      @media #{$tab}{font-size: 13px;}
-      @media #{$desktop}{font-size: 16px;}
-    }
-  }
-//}
+}

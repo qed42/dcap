@@ -1,175 +1,171 @@
-.pane-announcements {
-  background: $dark-blue;
-  @media #{$mobile}{
-    padding: 20px 1%;
-  }
-  @media #{$tab}{
-    padding: 40px 5%;
-  }
-  @media #{$desktop}{
-    padding: 60px 10%;
-  }
-  h2.pane-title {
-    color:  $yellow;
-    font-size: 40px;
-    text-transform: uppercase;
-  }
-  p {
-    color:  #ebebeb;
-    line-height: 1.5;
-  }
-
-  a.venue-details {
-    color:  #ebebeb;
-    font-size: 30px;
-    padding-top: 20px;
-    display: block;
-  }
-
-  ol {
-    li {
-      color: $yellow;
-      list-style: url('../images/list-pointer.png') inside;
-      line-height: 2;
-      vertical-align: top;
-      padding-top: 10px;
-    }
-  }
+.panel-2col-stacked .panel-col-top .inside,
+.panel-2col-stacked .panel-col-first .inside,
+.panel-2col-stacked .panel-col-last .inside {
+  margin: 0;
 }
 
-.panel-separator {
-  margin: 0 !important;
-}
-
-.pane-keynote-speaker {
-  background: $dark-blue url(../images/waves.png);
-  background-size: 100% 250%;
-  background-position: -50%;
-  text-align: center;
-  @media #{$mobile}{
-    padding: 20px 1%;
-  }
-  @media #{$tab}{
-    padding: 40px 5%;
-  }
-  @media #{$desktop}{
-    padding: 60px 10%;
-  }
-  h2.pane-title {
-    color:  $yellow;
-    font-size: 40px;
-    text-transform: uppercase;
-  }
-  p {
-    color:  #ebebeb;
-    line-height: 1.5;
-    margin: 0 auto;
-    @media #{$mobile}{
-      width: 90%;
-    }
-    @media #{$tab}{
-      width: 80%;
-    }
-    @media #{$desktop}{
-      width: 69%;
-    }
-  }
-}
-
-.dcap-homepage {
-  .panel-col-top {
-    .inside {
-      margin-bottom:0;
-    }
-  }
-  .center-wrapper {
-    background: url(../images/texture.png) no-repeat;
-    background-size: 100% 100%;
-    display: table;
-    @media #{$mobile}{
-      padding: 20px 1%;
-    }
-    @media #{$tab}{
-      padding: 40px 5%;
-    }
-    @media #{$desktop}{
-      padding: 60px 10%;
-    }
-  }
-  .panel-col-first {
-    text-align: center;
-    @media #{$mobile}{
-      width: 100%;
-      padding: 10px 2%;
-    }
-    @media #{$tab}{
-      width: 50%;
-      padding: 10px 5%;
-    }
-    @media #{$desktop}{
-      width: 65%;
-      padding: 20px 10%;
-    }
-    h2{
-      font-family: 'proximanova-bold';
-      color: #fb6704;
-      font-size: 25px;
-      text-transform: uppercase;
-      background: url(../images/heading-bg.png) no-repeat;
-      background-size: 100%;
-      padding: 0px 85px;
-    }
-    p {
-      color:  #285689;
-      font-size: 16px;
-      line-height: 1.5;
-    }
+.guides-block {
+  overflow: hidden;
+  width: 100%;
+  div {
+    float: left;
+    font-family: 'proximanova-light';
+    position: relative;
+    width: 33.33%;
     a {
-      color:  #fb6704;
-      padding: 15px 30px;
-      font-size:25px;
-      border: 4px solid #fb6704;
-      display: inline-block;
-      text-align: center;
-      margin: 10px 10px 40px 0;
-    }
-    .contextual-links-wrapper {
-      a {
-        color:  #fb6704;
-        padding: 10px;
-        font-size:14px;
-        border: none;
-        display: inline-block;
-        text-align: right;
-        margin: 0;
+      display: block;
+      height: 275px;
+      overflow: hidden;
+      img {
+        float: left;
+        width: 100%;
       }
     }
-  }
-  .panel-col-last {
-    background: url(../images/hornok.png) no-repeat;
-    background-size: 100% 100%;
-    padding: 80px 0;
-    @media #{$mobile}{
+    span {
+      bottom: 0;
+      display: block;
+      font-size: 34px;
+      left: 0;
+      padding: 15px 0;
+      position: absolute;
+      text-align: center;
       width: 100%;
     }
-    @media #{$tab}{
-      width: 50%;
+  }
+}
+
+#student {
+  a {
+    border: 18px solid $student-div;
+    border-bottom: none;
+  }
+  span {
+    background: url('../images/yellow-back.png') top left repeat-x;
+    color: $light-orange;
+  }
+}
+#faculties {
+  a {
+    border: 18px solid $faculty-div;
+    border-bottom: none;
+  }
+  span {
+    background: url('../images/green-back.png') top left repeat-x;
+    color: $faculty-text;
+  }
+}
+#mentors {
+  a {
+    border: 18px solid $mentor-div;
+    border-bottom: none;
+  }
+  span {
+    background: url('../images/blue-back.png') top left repeat-x;
+    color: $mentor-text;
+  }
+}
+
+.panel-2col-stacked {
+  .preface-wrapper {
+    .panel-col-first {
+      background: $purple;
+      float: left;
+      width: 62%;
     }
-    @media #{$desktop}{
-      width: 35%;
+    .panel-col-last {
+      background: $light-white;
+      float: right;
+      width: 38%;
     }
-    .inside {
-      margin: 0;
-    }
-    iframe {
-      width: 100% !important;
-      padding: 5px;
-      background: white;
-    }
-    h2 {
-      padding: 10px;
+  }
+}
+
+.preface-wrapper {
+  width: 100%;
+  overflow: hidden;
+  .panel-panel {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+  }
+}
+
+.join-the-revolution {
+  color: $grey;
+  font-family: 'proximanova-light';
+  padding: 25px 0;
+  text-align: center;
+  h2 {
+    font-size: 48px;
+    font-weight: normal;
+    padding: 25px;
+    &::first-letter {
+      font-family: 'ProximaNova';
+      font-size: 64px;
       text-transform: uppercase;
-      color: white;
     }
+  }
+  span {
+    display: block;
+    font-size: 28px;
+    margin: 15px 0;
+    &.resolution-second {
+      display: inline;
+      margin: 0 0 0 20px;
+    }
+  }
+  img {
+    width: 20%;
+  }
+}
+
+.webform-client-form-131 {
+  color: $grey;
+  font-family: 'proximanova-light';
+  overflow: hidden;
+  padding: 15% 6% 0;
+  .form-item {
+    margin: 20px 0;
+    label,
+    input {
+      display: inline-block;
+      vertical-align: top;
+    }
+    label {
+      font-size: 28px;
+      padding: 8px;
+      width: 135px;
+      .form-required {
+        display: none;
+      }
+    }
+    input {
+      @include rounded(8px);
+      border: 1px solid $input-border;
+      font-size: 20px;
+      padding: 8px;
+      width: 60%;
+    }
+  }
+  .form-actions {
+    margin: 55px 0 0;
+    text-align: center;
+    input {
+      @include rounded(28px);
+      background: $green;
+      border: none;
+      color: $white;
+      font-family: 'proximanova-light';
+      font-size: 24px;
+      padding: 12px 46px;
+    }
+  }
+}
+
+.homepage-map {
+  overflow: hidden;
+  width: 100%;
+  img {
+    float: left;
+    width: 100%;
   }
 }
