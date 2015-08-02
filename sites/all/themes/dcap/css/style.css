@@ -346,12 +346,17 @@ body {
   float: right;
   width: 38%;
 }
+.panel-2col-stacked .content-mid-wrapper {
+  overflow: hidden;
+}
 
-.preface-wrapper {
+.preface-wrapper,
+.content-wrapper {
   width: 100%;
   overflow: hidden;
 }
-.preface-wrapper .panel-panel {
+.preface-wrapper .panel-panel,
+.content-wrapper .panel-panel {
   margin-bottom: -99999px;
   padding-bottom: 99999px;
 }
@@ -443,6 +448,242 @@ body {
 .homepage-map img {
   float: left;
   width: 100%;
+}
+
+.content-mid-wrapper .pane-supporting-organization {
+  background: #f04936;
+  padding: 20px;
+  width: 100%;
+}
+.content-mid-wrapper .pane-supporting-organization .pane-title {
+  color: #fff;
+  font-family: 'proximanova-light';
+  font-size: 44px;
+  font-weight: normal;
+  padding: 25px;
+  text-transform: capitalize;
+}
+.content-mid-wrapper .pane-supporting-organization .pane-title::first-letter {
+  font-family: 'ProximaNova';
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.content-mid-wrapper .view-supporting-organization .jcarousel-skin-default .jcarousel-container-horizontal {
+  height: auto;
+  margin: 0 auto;
+  padding: 50px 40px 20px;
+  width: 90%;
+}
+.content-mid-wrapper .view-supporting-organization .jcarousel-skin-default .jcarousel-clip-horizontal {
+  margin: 0 auto;
+  width: 90%;
+}
+.content-mid-wrapper .view-supporting-organization .jcarousel-skin-default .jcarousel-item-horizontal {
+  margin: 0 20px;
+}
+.content-mid-wrapper .view-supporting-organization .jcarousel-skin-default .jcarousel-item-horizontal:first-of-type {
+  margin: 0;
+}
+.content-mid-wrapper .view-supporting-organization .jcarousel-skin-default .jcarousel-item {
+  background: none;
+  border: none;
+  height: auto;
+  width: 230px;
+  text-align: center;
+}
+.content-mid-wrapper .view-supporting-organization .jcarousel-skin-default .jcarousel-prev-horizontal {
+  top: 95px;
+  left: 0;
+}
+.content-mid-wrapper .view-supporting-organization .jcarousel-skin-default .jcarousel-next-horizontal {
+  top: 95px;
+  right: 0;
+}
+.content-mid-wrapper .view-supporting-organization .jcarousel-skin-default .jcarousel-prev {
+  background: url("../images/left-supporting-arrow.png") center left no-repeat;
+}
+.content-mid-wrapper .view-supporting-organization .jcarousel-skin-default .jcarousel-next {
+  background: url("../images/right-supporting-arrow.png") center right no-repeat;
+}
+.content-mid-wrapper .view-supporting-organization .supporting-organisation {
+  padding: 60px 0 0;
+  text-align: center;
+}
+.content-mid-wrapper .view-supporting-organization .supporting-organisation a {
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.content-mid-wrapper .view-supporting-organization .supporting-organisation a img {
+  max-width: 100%;
+}
+
+.content-wrapper .pane-supporting-organization {
+  overflow: hidden;
+  padding: 20px;
+  width: 100%;
+}
+.content-wrapper .pane-supporting-organization .pane-title {
+  color: #747475;
+  font-family: 'proximanova-light';
+  font-size: 44px;
+  font-weight: normal;
+  padding: 25px;
+  text-transform: capitalize;
+}
+.content-wrapper .pane-supporting-organization .pane-title::first-letter {
+  font-family: 'ProximaNova';
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.content-wrapper .pane-supporting-organization .view-supporting-organization .jcarousel-skin-default .jcarousel-container-horizontal {
+  height: auto;
+  margin: 0 auto;
+  padding: 50px 40px 20px;
+  width: 90%;
+}
+.content-wrapper .pane-supporting-organization .view-supporting-organization .jcarousel-skin-default .jcarousel-clip-horizontal {
+  width: 100%;
+}
+.content-wrapper .pane-supporting-organization .view-supporting-organization .jcarousel-skin-default .jcarousel-item-horizontal {
+  margin: 0 20px;
+}
+.content-wrapper .pane-supporting-organization .view-supporting-organization .jcarousel-skin-default .jcarousel-item-horizontal:first-of-type {
+  margin: 0;
+}
+.content-wrapper .pane-supporting-organization .view-supporting-organization .jcarousel-skin-default .jcarousel-item {
+  background: none;
+  border: none;
+  height: 230px;
+  width: 230px;
+  text-align: center;
+}
+.content-wrapper .pane-supporting-organization .view-supporting-organization .jcarousel-skin-default .jcarousel-prev-horizontal {
+  top: 95px;
+  left: 0;
+}
+.content-wrapper .pane-supporting-organization .view-supporting-organization .jcarousel-skin-default .jcarousel-next-horizontal {
+  top: 95px;
+  right: 0;
+}
+.content-wrapper .pane-supporting-organization .view-supporting-organization .jcarousel-skin-default .jcarousel-prev {
+  background: url("../images/grey-left-supporting-arrow.png") center left no-repeat;
+}
+.content-wrapper .pane-supporting-organization .view-supporting-organization .jcarousel-skin-default .jcarousel-next {
+  background: url("../images/grey-right-supporting-arrow.png") center right no-repeat;
+}
+.content-wrapper .pane-supporting-organization .view-supporting-organization .supporting-institutions {
+  padding: 60px 0 0;
+  text-align: center;
+}
+.content-wrapper .pane-supporting-organization .view-supporting-organization .supporting-institutions a {
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.content-wrapper .pane-supporting-organization .view-supporting-organization .supporting-institutions a img {
+  max-width: 100%;
+}
+.content-wrapper .pane-block-7 {
+  background: #bdbddf;
+  padding: 45px 45px 0;
+}
+.content-wrapper .pane-block-7 .wish-to-be-one {
+  border: 5px solid #fff;
+  overflow: hidden;
+}
+.content-wrapper .pane-block-7 .wish-to-be-one h2 {
+  color: #fff;
+  font-family: 'proximanova-light';
+  font-size: 48px;
+  margin: 40px 35px;
+  text-align: center;
+}
+.content-wrapper .pane-block-7 .wish-to-be-one img {
+  float: left;
+  width: 62%;
+}
+
+.supporting-sponsors {
+  background: #bdbddf;
+  overflow: hidden;
+  padding: 20px;
+  width: 100%;
+}
+.supporting-sponsors h2 {
+  color: #747475;
+  font-family: 'proximanova-light';
+  font-size: 44px;
+  font-weight: normal;
+  padding: 25px;
+  text-transform: capitalize;
+}
+.supporting-sponsors h2::first-letter {
+  font-family: 'ProximaNova';
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.supporting-sponsors .view-supporting-organization .jcarousel-skin-default .jcarousel-container-horizontal {
+  height: auto;
+  margin: 0 auto;
+  padding: 50px 40px 20px;
+  width: 90%;
+}
+.supporting-sponsors .view-supporting-organization .jcarousel-skin-default .jcarousel-clip-horizontal {
+  margin: 0 auto;
+  width: 90%;
+}
+.supporting-sponsors .view-supporting-organization .jcarousel-skin-default .jcarousel-item-horizontal {
+  margin: 0 20px;
+}
+.supporting-sponsors .view-supporting-organization .jcarousel-skin-default .jcarousel-item-horizontal:first-of-type {
+  margin: 0;
+}
+.supporting-sponsors .view-supporting-organization .jcarousel-skin-default .jcarousel-item {
+  background: none;
+  border: none;
+  height: auto;
+  width: 230px;
+  text-align: center;
+}
+.supporting-sponsors .view-supporting-organization .jcarousel-skin-default .jcarousel-prev-horizontal {
+  top: 95px;
+  left: 0;
+}
+.supporting-sponsors .view-supporting-organization .jcarousel-skin-default .jcarousel-next-horizontal {
+  top: 95px;
+  right: 0;
+}
+.supporting-sponsors .view-supporting-organization .jcarousel-skin-default .jcarousel-prev {
+  background: url("../images/grey-left-supporting-arrow.png") center left no-repeat;
+}
+.supporting-sponsors .view-supporting-organization .jcarousel-skin-default .jcarousel-next {
+  background: url("../images/grey-right-supporting-arrow.png") center right no-repeat;
+}
+.supporting-sponsors .view-supporting-organization .sponors {
+  padding: 60px 0 0;
+  text-align: center;
+}
+.supporting-sponsors .view-supporting-organization .sponors a {
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.supporting-sponsors .view-supporting-organization .sponors a img {
+  max-width: 100%;
+}
+
+.panel-separator {
+  display: none;
 }
 
 /* ----------Header--------- */

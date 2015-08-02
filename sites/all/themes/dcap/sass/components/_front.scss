@@ -78,9 +78,13 @@
       width: 38%;
     }
   }
+  .content-mid-wrapper {
+    overflow: hidden;
+  }
 }
 
-.preface-wrapper {
+.preface-wrapper,
+.content-wrapper {
   width: 100%;
   overflow: hidden;
   .panel-panel {
@@ -168,4 +172,257 @@
     float: left;
     width: 100%;
   }
+}
+
+.content-mid-wrapper {
+  .pane-supporting-organization {
+    background: $dark-red;
+    padding: 20px;
+    width: 100%;
+    .pane-title {
+      color: $white;
+      font-family: 'proximanova-light';
+      font-size: 44px;
+      font-weight: normal;
+      padding: 25px;
+      text-transform: capitalize;
+      &::first-letter {
+        font-family: 'ProximaNova';
+        font-size: 60px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .view-supporting-organization {
+    .jcarousel-skin-default {
+      .jcarousel-container-horizontal {
+        height: auto;
+        margin: 0 auto;
+        padding: 50px 40px 20px;
+        width: 90%;
+      }
+      .jcarousel-clip-horizontal {
+        margin: 0 auto;
+        width: 90%;
+      }
+      .jcarousel-item-horizontal {
+        margin: 0 20px;
+        &:first-of-type {
+          margin: 0;
+        }
+      }
+      .jcarousel-item {
+        background: none;
+        border: none;
+        height: auto;
+        width: 230px;
+        text-align: center;
+      }
+      .jcarousel-prev-horizontal {
+        top: 95px;
+        left: 0;
+      }
+      .jcarousel-next-horizontal {
+        top: 95px;
+        right: 0;
+      }
+      .jcarousel-prev {
+        background: url('../images/left-supporting-arrow.png') center left no-repeat;
+      }
+      .jcarousel-next {
+        background: url('../images/right-supporting-arrow.png') center right no-repeat;
+      }
+    }
+    .supporting-organisation {
+      padding: 60px 0 0;
+      text-align: center;
+      a {
+        display: block;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+.content-wrapper {
+  .pane-supporting-organization {
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+    .pane-title {
+      color: $grey;
+      font-family: 'proximanova-light';
+      font-size: 44px;
+      font-weight: normal;
+      padding: 25px;
+      text-transform: capitalize;
+      &::first-letter {
+        font-family: 'ProximaNova';
+        font-size: 60px;
+        text-transform: uppercase;
+      }
+    }
+    .view-supporting-organization {
+      .jcarousel-skin-default {
+        .jcarousel-container-horizontal {
+          height: auto;
+          margin: 0 auto;
+          padding: 50px 40px 20px;
+          width: 90%;
+        }
+        .jcarousel-clip-horizontal {
+          width: 100%;
+        }
+        .jcarousel-item-horizontal {
+          margin: 0 20px;
+          &:first-of-type {
+            margin: 0;
+          }
+        }
+        .jcarousel-item {
+          background: none;
+          border: none;
+          height: 230px;
+          width: 230px;
+          text-align: center;
+        }
+        .jcarousel-prev-horizontal {
+          top: 95px;
+          left: 0;
+        }
+        .jcarousel-next-horizontal {
+          top: 95px;
+          right: 0;
+        }
+        .jcarousel-prev {
+          background: url('../images/grey-left-supporting-arrow.png') center left no-repeat;
+        }
+        .jcarousel-next {
+          background: url('../images/grey-right-supporting-arrow.png') center right no-repeat;
+        }
+      }
+      .supporting-institutions {
+        padding: 60px 0 0;
+        text-align: center;
+        a {
+          display: block;
+          position: relative;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .pane-block-7 {
+    background: $dark-purple;
+    padding: 45px 45px 0;
+    .wish-to-be-one {
+      border: 5px solid $white;
+      overflow: hidden;
+      h2 {
+        color: $white;
+        font-family: 'proximanova-light';
+        font-size: 48px;
+        margin: 40px 35px;
+        text-align: center;
+      }
+      img {
+        float: left;
+        width: 62%;
+      }
+    }
+  }
+}
+
+.supporting-sponsors {
+  background: $dark-purple;
+  overflow: hidden;
+  padding: 20px;
+  width: 100%;
+  h2 {
+    color: $grey;
+    font-family: 'proximanova-light';
+    font-size: 44px;
+    font-weight: normal;
+    padding: 25px;
+    text-transform: capitalize;
+    &::first-letter {
+      font-family: 'ProximaNova';
+      font-size: 60px;
+      text-transform: uppercase;
+    }
+  }
+  .view-supporting-organization {
+    .jcarousel-skin-default {
+      .jcarousel-container-horizontal {
+        height: auto;
+        margin: 0 auto;
+        padding: 50px 40px 20px;
+        width: 90%;
+      }
+      .jcarousel-clip-horizontal {
+        margin: 0 auto;
+        width: 90%;
+      }
+      .jcarousel-item-horizontal {
+        margin: 0 20px;
+        &:first-of-type {
+          margin: 0;
+        }
+      }
+      .jcarousel-item {
+        background: none;
+        border: none;
+        height: auto;
+        width: 230px;
+        text-align: center;
+      }
+      .jcarousel-prev-horizontal {
+        top: 95px;
+        left: 0;
+      }
+      .jcarousel-next-horizontal {
+        top: 95px;
+        right: 0;
+      }
+      .jcarousel-prev {
+        background: url('../images/grey-left-supporting-arrow.png') center left no-repeat;
+      }
+      .jcarousel-next {
+        background: url('../images/grey-right-supporting-arrow.png') center right no-repeat;
+      }
+    }
+    .sponors {
+      padding: 60px 0 0;
+      text-align: center;
+      a {
+        display: block;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.panel-separator {
+  display: none;
 }
