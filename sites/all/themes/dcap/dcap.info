@@ -9,6 +9,7 @@ stylesheets[all][] = css/style.css
 
 ;-------------- JS -------------
 scripts[] = js/script.js
+scripts[] = js/dcap.js
 
 regions[page_top] = Page top
 regions[header] = Header
