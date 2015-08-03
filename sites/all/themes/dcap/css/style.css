@@ -233,6 +233,163 @@ body {
   width: 100%;
 }
 
+.pane-college-page,
+.pane-faqs {
+  overflow: hidden;
+  width: 100%;
+}
+
+.view-college-page,
+.view-faqs {
+  padding: 5% 4.5%;
+}
+
+.views-exposed-widgets {
+  margin: 0;
+}
+
+.views-exposed-form .views-exposed-widget {
+  float: none;
+  padding: 0;
+}
+.views-exposed-form .views-exposed-widget .form-submit {
+  background: url("../images/search.png") top left no-repeat;
+  background-position: 5px 0;
+  background-size: contain;
+  border: none;
+  display: block;
+  height: 30px;
+  margin: 0;
+  text-indent: -9999px;
+  width: 35px;
+}
+
+.views-widget-filter-field_location_locality,
+.views-widget-filter-tid {
+  display: inline-block;
+  width: 49%;
+}
+.views-widget-filter-field_location_locality label,
+.views-widget-filter-tid label {
+  color: #848486;
+  font-family: 'proximanova-light';
+  font-size: 48px;
+  font-weight: normal;
+  padding: 25px 0;
+}
+.views-widget-filter-field_location_locality label::first-letter,
+.views-widget-filter-tid label::first-letter {
+  font-family: 'ProximaNova';
+  font-size: 64px;
+  text-transform: uppercase;
+}
+.views-widget-filter-field_location_locality input,
+.views-widget-filter-tid input {
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #7d7d7d;
+  font-size: 16px;
+  margin: 4% 0;
+  padding: 8px;
+  width: 100%;
+}
+
+.views-submit-button {
+  display: inline-block;
+  width: 50%;
+}
+
+.masonry-processed {
+  overflow: hidden;
+  margin: 25px 0;
+  width: 100%;
+}
+
+.masonry-item {
+  background: #f19581;
+  color: #585757;
+  margin: 0 30px 30px 0;
+  width: 31%;
+}
+.masonry-item .views-field-field-image {
+  overflow: hidden;
+}
+.masonry-item .views-field-field-image img {
+  float: left;
+  width: 100%;
+}
+.masonry-item:nth-of-type(2n-1) {
+  background: #bdbddf;
+}
+.masonry-item:nth-of-type(3n-1) {
+  background: #fbd564;
+}
+.masonry-item .views-field-title {
+  font-family: 'proximanova-light';
+  font-size: 24px;
+  font-weight: normal;
+  padding: 20px 18px;
+  text-transform: capitalize;
+}
+.masonry-item .views-field-title::first-letter {
+  font-family: 'ProximaNova';
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.masonry-item .views-field-title a {
+  color: #fcfcfc;
+}
+.masonry-item .views-field-nothing {
+  padding: 0 18px;
+}
+.masonry-item .views-field-nothing .address {
+  background: url("../images/location.png") top left no-repeat;
+  background-size: 12px;
+  font-family: 'proximanova-bold';
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0 0 0 18px;
+}
+.masonry-item .views-field-body {
+  font-size: 14px;
+  padding: 5px 18px 18px;
+}
+
+.pane-faqs .view-content .views-row {
+  background: #ebebeb;
+  margin: 30px 0;
+  padding: 20px;
+}
+.pane-faqs .view-content .views-field-title {
+  padding: 0 4px;
+  font-size: 20px;
+}
+.pane-faqs .view-content .views-field-title a {
+  color: #6c6b6c;
+  display: inline-block;
+}
+.pane-faqs .view-content .views-field-title a.active {
+  color: red;
+}
+.pane-faqs .view-content .views-field-body {
+  font-size: 18px;
+  padding: 30px 0 0;
+}
+.pane-faqs .view-content .views-field-body p {
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff;
+  color: #6c6b6c;
+  line-height: 28px;
+  padding: 25px;
+}
+
 /* ----------Footer--------- */
 .region-footer {
   background: #2b2c2d;
