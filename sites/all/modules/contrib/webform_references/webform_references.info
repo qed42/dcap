@@ -1,0 +1,13 @@
+name = Webform Reference
+description = Defines a webform component type for referencing the nodes.
+package = Webform
+core = 7.x
+
+dependencies[] = webform
+
+; Information added by Drupal.org packaging script on 2015-03-13
+version = "7.x-1.3"
+core = "7.x"
+project = "webform_references"
+datestamp = "1426267385"
+
