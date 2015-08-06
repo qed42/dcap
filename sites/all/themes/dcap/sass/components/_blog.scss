@@ -1,0 +1,499 @@
+/****** Blog Listing Page Style Starts ******/
+.pane-1 {
+  overflow: hidden;
+  width: 100%;
+  img {
+    float: left;
+    width: 100%;
+    @media #{$tab} {
+      height: 200px;
+    }
+    @media #{$xxlarge-up} {
+      height: auto;
+    }
+  }
+}
+
+.page-blog,
+.node-type-article {
+  .center-wrapper {
+    padding: 5% 4.5%;
+    .panel-col-first {
+      width: 69.1%;
+      .inside {
+        margin: 0;
+        padding: 0 30px;
+      }
+    }
+    .panel-col-last {
+      width: 27.9%;
+      margin-left: 3%;
+      .inside {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.pane-blogs {
+  .view-blogs {
+    .views-row {
+      margin: 7% 0;
+      &.views-row-first {
+        margin-top: 0;
+      }
+    }
+    .item-list {
+      padding: 0 0 0 80px;
+      ul {
+        font-family: 'OpenSansRegular';
+        position: relative;
+        li {
+          background: $list-back;
+          border-radius: 50%;
+          color: $list-text;
+          margin: 0 10px 0 0;
+          padding: 9px 16px;
+          a {
+            color: $list-text;
+          }
+        }
+        .pager-current {
+          background: $list-active;
+          color: $white;
+        }
+        .pager-first,
+        .pager-last {
+          display: none;
+        }
+        .pager-previous {
+          background: url('../images/blog-prev.png') center no-repeat $list-back;
+          background-size: 10px;
+          left: 0;
+          position: absolute;
+          text-indent: -99999px;
+          top: -14px;
+          a {
+            display: block;
+            height: 22px;
+            width: 8px;
+          }
+        }
+        .pager-next {
+          background: url('../images/blog-next.png') center no-repeat $list-back;
+          background-size: 10px;
+          right: 0;
+          position: absolute;
+          text-indent: -99999px;
+          top: -14px;
+          a {
+            display: block;
+            height: 22px;
+            width: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.blog-listng-markup {
+  overflow: hidden;
+  .posted-date {
+    @include rounded(4px);
+    background: $dark-purple;
+    color: $white;
+    float: left;
+    margin: 0 20px 0 0;
+    padding: 12px;
+    text-align: center;
+    width: 63px;
+    .posted-day {
+      font-size: 26px;
+    }
+    .posted-month {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    .posted-year {
+      font-size: 12px;
+    }
+  }
+  .blog-wrapper {
+    float: right;
+    width: 90%;
+    .blog-title {
+      font-size: 24px;
+      line-height: 35px;
+      a {
+        color: $nav-text;
+        display: inline-block;
+        padding: 0 0 12px;
+      }
+    }
+    .blog-content {
+      overflow: hidden;
+      span {
+        display: block;
+        float: left;
+      }
+      .blog-image {
+        width: 35%;
+        a {
+          display: block;
+        }
+        img {
+          float: left;
+          width: 100%;
+        }
+      }
+      .blog-synopsis {
+        clear: right;
+        margin: 0 0 0 25px;
+        width: 61%;
+        p {
+          font-size: 14px;
+        }
+      }
+      .read-more {
+        font-size: 15px;
+        margin: 5px 0;
+        a {
+          color: $red;
+        }
+      }
+    }
+    .about-blog {
+      border-top: 2px solid $blog-border;
+      border-bottom: 2px solid $blog-border;
+      font-size: 15px;
+      margin: 15px 0;
+      overflow: hidden;
+      padding: 12px 0;
+      span {
+        display: inline-block;
+        margin: 0 12px 0 0;
+        vertical-align: top;
+      }
+      .blog-author {
+        width: 20%;
+        a {
+          color: $red;
+          display: inline-block;
+          margin: 0 0 0 2px;
+        }
+      }
+      .blog-comment {
+        color: $red;
+        width: 14%;
+      }
+      .blog-tags {
+        width: 43%;
+      }
+      .blog-share {
+        margin: 0;
+        width: 16%;
+        span {
+          margin: 0;
+          text-indent: -9999px;
+          a {
+            display: block;
+            height: 20px;
+            width: 20px;
+          }
+          &.blog-twitter {
+            background: url('../images/blog-tw-icon.png') top left no-repeat;
+            background-size: contain;
+            margin: 0 10px;
+          }
+          &.blog-facebook {
+            background: url('../images/blog-fb-icon.png') top left no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+    }
+  }
+}
+
+.follow-us {
+  overflow: hidden;
+  span {
+    display: inline-block;
+    &.follow-fb {
+      background: url('../images/follow-fb.png') top left no-repeat;
+      background-size: contain;
+    }
+    &.follow-twitter {
+      background: url('../images/follow-tw.png') top left no-repeat;
+      background-size: contain;
+      margin: 0 10px;
+    }
+    &.follow-googleplus {
+      background: url('../images/follow-go.png') top left no-repeat;
+      background-size: contain;
+    }
+    a {
+      display: block;
+      height: 36px;
+      text-indent: -99999px;
+      width: 36px;
+    }
+  }
+}
+
+.pane-category,
+.pane-blogs-panel-pane-1,
+.pane-blogs-panel-pane-2,
+.pane-tags {
+  margin: 25px 0;
+}
+
+.view-category {
+  font-size: 14px;
+  ul {
+    padding: 0 2px;
+    li {
+      background: url('../images/category-list-arrow.png') center left no-repeat;
+      background-size: 6px;
+      padding: 8px 0 8px 18px;
+      &:hover {
+        @include rounded(4px);
+        background: url('../images/category-list-active.png') center left no-repeat $dark-purple;
+        background-position: 12px;
+        background-size: 6px;
+        padding: 8px 0 8px 28px;
+        a {
+          color: $white;
+        }
+      }
+      a {
+        color: $nav-text;
+      }
+    }
+  }
+}
+
+.pane-blogs-panel-pane-1 {
+  .views-field-field-image {
+    overflow: hidden;
+    img {
+      float: left;
+      width: 100%;
+    }
+  }
+  .views-field-title {
+    display: none;
+  }
+  .views-field-field-synopsis {
+    font-size: 14px;
+    padding: 25px 0;
+  }
+  .popular-post-footer {
+    font-size: 14px;
+    overflow: hidden;
+    span {
+      display: block;
+      &.posted-on {
+        color: $red;
+        float: left;
+      }
+      &.read-more {
+        background: url('../images/grey-right-supporting-arrow.png') center right no-repeat;
+        background-size: 6px 8px;
+        float: right;
+        padding: 0 14px 0 0;
+        a {
+          color: $nav-text;
+        }
+      }
+    }
+  }
+}
+
+.pane-blogs-panel-pane-2 {
+  font-size: 14px;
+  .views-row {
+    background: url('../images/blog-post-list.png') center left no-repeat;
+    background-size: 7px;
+    padding: 8px 0 8px 18px;
+    a {
+      color: $nav-text;
+      display: block;
+    }
+  }
+}
+
+.pane-tags {
+  .view-tags {
+    .views-row {
+      @include rounded(4px);
+      background: $tags-back;
+      display: inline-block;
+      padding: 8px;
+      margin: 4px;
+      vertical-align: top;
+    }
+  }
+}
+/****** Blog Listing Page Style Ends ******/
+
+
+/****** Blog Detail Page Style Starts ******/
+.node-type-article {
+  #page-title {
+    display: none;
+  }
+  .pane-blogs-panel-pane-3 {
+    overflow: hidden;
+    .blog-listing-markup {
+      overflow: hidden;
+    }
+    .posted-date {
+      @include rounded(4px);
+      background: $dark-purple;
+      color: $white;
+      float: left;
+      margin: 0 20px 0 0;
+      padding: 12px;
+      text-align: center;
+      width: 63px;
+      .posted-day {
+        font-size: 26px;
+      }
+      .posted-month {
+        font-size: 16px;
+        line-height: 25px;
+      }
+      .posted-year {
+        font-size: 12px;
+      }
+    }
+    .blog-wrapper {
+      float: right;
+      width: 90%;
+      .blog-title {
+        font-size: 24px;
+        line-height: 24px;
+        a {
+          color: $nav-text;
+          display: inline-block;
+          padding: 0;
+        }
+      }
+      .about-blog {
+        border-top: 2px solid $blog-border;
+        border-bottom: 2px solid $blog-border;
+        font-size: 15px;
+        margin: 15px 0;
+        overflow: hidden;
+        padding: 12px 0;
+        span {
+          display: inline-block;
+          margin: 0 12px 0 0;
+          vertical-align: top;
+        }
+        .blog-author {
+          width: 20%;
+          a {
+            color: $red;
+            display: inline-block;
+            margin: 0 0 0 2px;
+          }
+        }
+        .blog-comment {
+          color: $red;
+          width: 14%;
+        }
+        .blog-tags {
+          width: 43%;
+        }
+        .blog-share {
+          margin: 0;
+          width: 16%;
+          span {
+            margin: 0;
+            text-indent: -9999px;
+            a {
+              display: block;
+              height: 20px;
+              width: 20px;
+            }
+            &.blog-twitter {
+              background: url('../images/blog-tw-icon.png') top left no-repeat;
+              background-size: contain;
+              margin: 0 10px;
+            }
+            &.blog-facebook {
+              background: url('../images/blog-fb-icon.png') top left no-repeat;
+              background-size: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.pane-node-field-image {
+  float: left;
+  margin: 18px 25px 4px 80px;
+  overflow: hidden;
+  width: 270px;
+  img {
+    max-height: 215px;
+    width: 100%;
+  }
+}
+
+.pane-node-body {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 18px 0 18px 80px;
+}
+
+.pane-node-sharethis {
+  padding: 25px 0 25px 80px;
+  text-align: center;
+  .pane-title {
+    background: $white;
+    display: inline-block;
+    font-size: 22px;
+    line-height: 32px;
+    padding: 10px 30px;
+  }
+  .sharethis-buttons {
+    @include box-sizing(border-box);
+    border: 2px solid $share-border;
+    padding: 50px;
+    margin: -29px 0 0;
+  }
+}
+
+.region-content {
+  ul.flippy {
+    padding: 0;
+    li {
+      padding: 0;
+    }
+  }
+}
+
+.pane-flippy-flippy-pager-node-type-article {
+  overflow: hidden;
+  padding: 25px 0 25px 80px;
+  .flippy {
+    overflow: hidden;
+    font-size: 22px;
+    li a {
+      color: $red;
+    }
+  }
+  .prev {
+    float: left;
+  }
+  .next {
+    float: right;
+  }
+}
+/****** Blog Detail Page Style Ends ******/

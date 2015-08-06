@@ -1,12 +1,14 @@
-.pane-college-page,
-.pane-faqs {
-  overflow: hidden;
+.page-colleges,
+.page-faqs {
   width: 100%;
-}
-
-.view-college-page,
-.view-faqs {
-  padding: 5% 4.5%;
+  .pane-college-page,
+  .pane-faqs {
+    overflow: hidden;
+  }
+  .view-college-page,
+  .view-faqs {
+    padding: 5% 4.5%;
+  }
 }
 
 .views-exposed-widgets {
@@ -21,7 +23,7 @@
     background-position: 5px 0;
     background-size: contain;
     border: none;
-    display: block;
+    display: inline-block;
     height: 30px;
     margin: 0;
     text-indent: -9999px;
@@ -99,19 +101,54 @@
       color: $masonary-heading;
     }
   }
-  .views-field-nothing {
-    padding: 0 18px;
+  .college_location {
+    padding: 3px 18px;
     .address {
-      background: url('../images/location.png') top left no-repeat;
+      background: url('../images/location.png') 3px 0 no-repeat;
       background-size: 12px;
       font-family: 'proximanova-bold';
       font-size: 14px;
       line-height: 24px;
-      padding: 0 0 0 18px;
+      padding: 0 0 0 22px;
+    }
+  }
+  .faculty_ambassador {
+    padding: 0 18px;
+    .field-content {
+      background: url('../images/faculty-icon.png') 0 3px no-repeat;
+      background-size: 15px;
+      font-family: 'proximanova-bold';
+      font-size: 14px;
+      line-height: 24px;
+      padding: 0 0 0 22px;
+      a {
+        color: $location-text;
+        display: block;
+        padding: 3px 0;
+      }
+    }
+  }
+  .student_ambassador {
+    padding: 0 18px;
+    .field-content {
+      background: url('../images/student-icon.png') 0 4px no-repeat;
+      background-size: 17px;
+      font-family: 'proximanova-bold';
+      font-size: 14px;
+      line-height: 24px;
+      padding: 0 0 0 22px;
+      a {
+        color: $location-text;
+        display: block;
+        padding: 3px 0;
+      }
     }
   }
   .views-field-body {
     font-size: 14px;
     padding: 5px 18px 18px;
+  }
+  &.views-row-first {
+    background: $masonary-block1;
   }
 }

@@ -59,3 +59,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('../fonts/opensans/OpenSansRegular.eot');
+  src: url('../fonts/opensans/OpenSansRegular.eot') format('embedded-opentype'),
+       url('../fonts/opensans/OpenSansRegular.woff2') format('woff2'),
+       url('../fonts/opensans/OpenSansRegular.woff') format('woff'),
+       url('../fonts/opensans/OpenSansRegular.ttf') format('truetype'),
+       url('../fonts/opensans/OpenSansRegular.svg#OpenSansRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

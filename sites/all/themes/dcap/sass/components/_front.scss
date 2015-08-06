@@ -1,9 +1,3 @@
-.panel-2col-stacked .panel-col-top .inside,
-.panel-2col-stacked .panel-col-first .inside,
-.panel-2col-stacked .panel-col-last .inside {
-  margin: 0;
-}
-
 .guides-block {
   overflow: hidden;
   width: 100%;
@@ -62,34 +56,6 @@
   span {
     background: url('../images/blue-back.png') top left repeat-x;
     color: $mentor-text;
-  }
-}
-
-.panel-2col-stacked {
-  .preface-wrapper {
-    .panel-col-first {
-      background: $purple;
-      float: left;
-      width: 62%;
-    }
-    .panel-col-last {
-      background: $light-white;
-      float: right;
-      width: 38%;
-    }
-  }
-  .content-mid-wrapper {
-    overflow: hidden;
-  }
-}
-
-.preface-wrapper,
-.content-wrapper {
-  width: 100%;
-  overflow: hidden;
-  .panel-panel {
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
   }
 }
 
@@ -421,8 +387,4 @@
       }
     }
   }
-}
-
-.panel-separator {
-  display: none;
 }
