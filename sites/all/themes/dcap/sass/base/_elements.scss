@@ -8,7 +8,43 @@ ul.menu {
   }
 }
 
+.item-list {
+  ul {
+    margin: 0;
+    li {
+      margin: 0;
+    }
+  }
+}
+
 /* -------------- buttons -------------- */
+.stButton .stFb,
+.stButton .stTwbutton,
+.stButton .stMainServices,
+.stButton .stButton_gradient {
+  height: 22px !important;
+}
+
+.st_twitter_hcount,
+.st_plusone_hcount,
+.st_fblike_hcount {
+  display: inline-block;
+  margin: 0 12px 0 0;
+  vertical-align: top;
+}
+
+.st_plusone_hcount {
+  > div {
+    width: 60px !important;
+  }
+}
+
+.st_fblike_hcount {
+  margin: 0;
+  > span {
+    margin: 0 3px !important;
+  }
+}
 
 /* -------------- links -------------- */
 
