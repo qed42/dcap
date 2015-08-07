@@ -477,6 +477,7 @@ body {
 }
 .blog-listng-markup .blog-wrapper .blog-content .blog-image img {
   float: left;
+  max-height: 248px;
   width: 100%;
 }
 .blog-listng-markup .blog-wrapper .blog-content .blog-synopsis {
@@ -830,6 +831,7 @@ body {
 }
 
 /****** Blog Detail Page Style Ends ******/
+/****** College Listing Page Style Starts ******/
 .page-colleges,
 .page-faqs {
   width: 100%;
@@ -996,6 +998,83 @@ body {
   background: #f19581;
 }
 
+/****** College Listing Page Style Ends ******/
+/****** College Detail Page Style Starts ******/
+.node-type-college .view-college-page {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.node-type-college .view-college-page .views-field-field-image {
+  overflow: hidden;
+  width: 100%;
+}
+.node-type-college .view-college-page .views-field-field-image img {
+  float: left;
+  max-height: 480px;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .node-type-college .view-college-page .views-field-field-image img {
+    height: 480px;
+  }
+}
+@media only screen and (min-width: 1181px) {
+  .node-type-college .view-college-page .views-field-field-image img {
+    height: auto;
+  }
+}
+.node-type-college .view-college-page .views-field-field-logo {
+  border: 4px solid #ccc;
+  bottom: 54px;
+  height: 165px;
+  left: 80px;
+  position: absolute;
+  overflow: hidden;
+  width: 180px;
+}
+.node-type-college .view-college-page .views-field-field-logo .field-content {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+.node-type-college .view-college-page .views-field-field-logo img {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+.node-type-college .view-college-page .views-field-title {
+  background: #ebebeb;
+  margin: 25px auto;
+  overflow: hidden;
+  padding: 0 0 0 200px;
+  width: 88%;
+}
+.node-type-college .view-college-page .views-field-title span {
+  color: #848486;
+  display: block;
+  font-family: 'proximanova-light';
+  font-size: 40px;
+  font-weight: normal;
+  padding: 55px 0 30px;
+}
+.node-type-college .view-college-page .views-field-title span::first-letter {
+  font-family: 'ProximaNova';
+  font-size: 48px;
+  text-transform: uppercase;
+}
+.node-type-college .center-wrapper {
+  width: 88%;
+  margin: 25px auto;
+}
+.node-type-college .center-wrapper .panel-col-first {
+  width: 75%;
+}
+.node-type-college .center-wrapper .panel-col-last {
+  width: 24.9%;
+}
+
+/****** College Detail Page Style Ends ******/
 .pane-faqs .view-content .views-row {
   background: #ebebeb;
   margin: 30px 0;
@@ -1245,14 +1324,11 @@ body {
 .content-mid-wrapper .view-supporting-organization .jcarousel-skin-default .jcarousel-item-horizontal {
   margin: 0 20px;
 }
-.content-mid-wrapper .view-supporting-organization .jcarousel-skin-default .jcarousel-item-horizontal:first-of-type {
-  margin: 0;
-}
 .content-mid-wrapper .view-supporting-organization .jcarousel-skin-default .jcarousel-item {
   background: none;
   border: none;
   height: 230px;
-  width: 230px;
+  width: 225px;
   text-align: center;
 }
 .content-mid-wrapper .view-supporting-organization .jcarousel-skin-default .jcarousel-prev-horizontal {
@@ -1315,14 +1391,11 @@ body {
 .content-wrapper .pane-supporting-organization .view-supporting-organization .jcarousel-skin-default .jcarousel-item-horizontal {
   margin: 0 20px;
 }
-.content-wrapper .pane-supporting-organization .view-supporting-organization .jcarousel-skin-default .jcarousel-item-horizontal:first-of-type {
-  margin: 0;
-}
 .content-wrapper .pane-supporting-organization .view-supporting-organization .jcarousel-skin-default .jcarousel-item {
   background: none;
   border: none;
   height: 230px;
-  width: 230px;
+  width: 214px;
   text-align: center;
 }
 .content-wrapper .pane-supporting-organization .view-supporting-organization .jcarousel-skin-default .jcarousel-prev-horizontal {
@@ -1406,14 +1479,11 @@ body {
 .supporting-sponsors .view-supporting-organization .jcarousel-skin-default .jcarousel-item-horizontal {
   margin: 0 20px;
 }
-.supporting-sponsors .view-supporting-organization .jcarousel-skin-default .jcarousel-item-horizontal:first-of-type {
-  margin: 0;
-}
 .supporting-sponsors .view-supporting-organization .jcarousel-skin-default .jcarousel-item {
   background: none;
   border: none;
   height: 230px;
-  width: 230px;
+  width: 225px;
   text-align: center;
 }
 .supporting-sponsors .view-supporting-organization .jcarousel-skin-default .jcarousel-prev-horizontal {
