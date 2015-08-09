@@ -46,6 +46,85 @@ ul.menu {
   }
 }
 
+/* -------------- form -------------- */
+form {
+  overflow: hidden;
+  padding: 25px;
+  text-align: center;
+  width: 100%;
+  .form-item {
+    background: $greyish-white;
+    margin: 25px auto;
+    overflow: hidden;
+    padding: 20px;
+    width: 75%;
+    label,
+    input {
+      display: block;
+      float: left;
+      vertical-align: top;
+      text-align: left;
+    }
+    label {
+      width: 30%;
+      font-size: 22px;
+      line-height: 40px;
+    }
+    input,
+    textarea {
+      @include rounded(6px);
+      border: none;
+      font-size: 18px;
+      padding: 10px;
+      width: 69.9%;
+    }
+    .description,
+    .grippie {
+      display: none;
+    }
+    &.form-type-radio {
+      width: auto;
+      .form-radio {
+        width: auto;
+      }
+    }
+    .form-radios {
+      display: block;
+      float: left;
+      text-align: left;
+      width: 69.9%;
+      .form-type-radio {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        input[type='radio'] {
+          display: inline-block;
+          margin: 10px;
+        }
+      }
+    }
+  }
+  .form-actions {
+    margin: 25px auto;
+    overflow: hidden;
+    padding: 20px;
+    width: 75%;
+    input[type='submit'] {
+      @include rounded(6px);
+      background: $submit-button;
+      border: none;
+      color: $white;
+      font-family: 'proximanova-bold';
+      padding: 15px 35px;
+      font-size: 22px;
+    }
+  }
+  #edit-field-website-link {
+    display: none;
+  }
+}
+
 /* -------------- links -------------- */
 
 /* -------------- images -------------- */
