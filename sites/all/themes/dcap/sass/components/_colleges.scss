@@ -10,6 +10,24 @@
   .view-faqs {
     padding: 5% 4.5%;
   }
+  form.ctools-auto-submit-full-form {
+    padding: 0;
+    text-align: left;
+    .form-item {
+      background: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      input {
+        @include rounded(8px);
+        border: 1px solid $input-border;
+        font-size: 16px;
+        margin: 4% 0;
+        padding: 8px;
+        width: 100%;
+      }
+    }
+  }
 }
 
 .views-exposed-widgets {
@@ -26,7 +44,7 @@
     border: none;
     display: inline-block;
     height: 30px;
-    margin: 0;
+    margin: 4% 0;
     text-indent: -9999px;
     width: 35px;
   }
@@ -35,6 +53,7 @@
 .views-widget-filter-field_location_locality,
 .views-widget-filter-tid {
   display: inline-block;;
+  vertical-align: bottom;
   width: 49%;
   label {
     color: $nav-text;
@@ -47,14 +66,6 @@
       font-size: 64px;
       text-transform: uppercase;
     }
-  }
-  input {
-    @include rounded(8px);
-    border: 1px solid $input-border;
-    font-size: 16px;
-    margin: 4% 0;
-    padding: 8px;
-    width: 100%;
   }
 }
 

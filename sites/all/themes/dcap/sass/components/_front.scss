@@ -94,7 +94,10 @@
   overflow: hidden;
   padding: 15% 6% 0;
   .form-item {
+    background: none;
     margin: 20px 0;
+    padding: 0;
+    width: 100%;
     label,
     input {
       display: inline-block;
@@ -102,6 +105,7 @@
     }
     label {
       font-size: 28px;
+      line-height: 36px;
       padding: 8px;
       width: 135px;
       .form-required {
@@ -118,7 +122,9 @@
   }
   .form-actions {
     margin: 55px 0 0;
+    padding: 0;
     text-align: center;
+    width: 100%;
     input {
       @include rounded(28px);
       background: $green;

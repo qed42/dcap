@@ -61,7 +61,7 @@ $legacy-support-for-ie8: true;
   filter: alpha(opacity=$opacity-ie); //IE8
 }
 
-@mixin transition($property, $t, $effect){
+@mixin transition($property, $t, $effect) {
   -webkit-transition: $property $t $effect;
   -moz-transition: $property $t $effect;
   -o-transition: $property $t $effect;
@@ -69,7 +69,7 @@ $legacy-support-for-ie8: true;
 }
 
 // placeholders
-%img{
+%img {
   width: 100%;
-  height:auto;
+  height: auto;
 }
