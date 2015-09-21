@@ -12,7 +12,7 @@
         color: $dark-grey;
         display: inline-block;
         &.active {
-          color: red;
+          color: $dark-red;
         }
       }
     }

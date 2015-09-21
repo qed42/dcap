@@ -1,9 +1,3 @@
-.panel-2col-stacked .panel-col-top .inside,
-.panel-2col-stacked .panel-col-first .inside,
-.panel-2col-stacked .panel-col-last .inside {
-  margin: 0;
-}
-
 .guides-block {
   overflow: hidden;
   width: 100%;
@@ -65,34 +59,6 @@
   }
 }
 
-.panel-2col-stacked {
-  .preface-wrapper {
-    .panel-col-first {
-      background: $purple;
-      float: left;
-      width: 62%;
-    }
-    .panel-col-last {
-      background: $light-white;
-      float: right;
-      width: 38%;
-    }
-  }
-  .content-mid-wrapper {
-    overflow: hidden;
-  }
-}
-
-.preface-wrapper,
-.content-wrapper {
-  width: 100%;
-  overflow: hidden;
-  .panel-panel {
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
-  }
-}
-
 .join-the-revolution {
   color: $grey;
   font-family: 'proximanova-light';
@@ -128,7 +94,10 @@
   overflow: hidden;
   padding: 15% 6% 0;
   .form-item {
+    background: none;
     margin: 20px 0;
+    padding: 0;
+    width: 100%;
     label,
     input {
       display: inline-block;
@@ -136,6 +105,7 @@
     }
     label {
       font-size: 28px;
+      line-height: 36px;
       padding: 8px;
       width: 135px;
       .form-required {
@@ -152,7 +122,9 @@
   }
   .form-actions {
     margin: 55px 0 0;
+    padding: 0;
     text-align: center;
+    width: 100%;
     input {
       @include rounded(28px);
       background: $green;
@@ -207,15 +179,12 @@
       }
       .jcarousel-item-horizontal {
         margin: 0 20px;
-        &:first-of-type {
-          margin: 0;
-        }
       }
       .jcarousel-item {
         background: none;
         border: none;
         height: 230px;
-        width: 230px;
+        width: 225px;
         text-align: center;
       }
       .jcarousel-prev-horizontal {
@@ -283,15 +252,12 @@
         }
         .jcarousel-item-horizontal {
           margin: 0 20px;
-          &:first-of-type {
-            margin: 0;
-          }
         }
         .jcarousel-item {
           background: none;
           border: none;
           height: 230px;
-          width: 230px;
+          width: 214px;
           text-align: center;
         }
         .jcarousel-prev-horizontal {
@@ -379,15 +345,12 @@
       }
       .jcarousel-item-horizontal {
         margin: 0 20px;
-        &:first-of-type {
-          margin: 0;
-        }
       }
       .jcarousel-item {
         background: none;
         border: none;
         height: 230px;
-        width: 230px;
+        width: 225px;
         text-align: center;
       }
       .jcarousel-prev-horizontal {
@@ -421,8 +384,4 @@
       }
     }
   }
-}
-
-.panel-separator {
-  display: none;
 }

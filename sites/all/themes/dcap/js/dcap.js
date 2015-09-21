@@ -22,6 +22,21 @@
         $bgs.not($target).filter(':visible').stop(true, true).slideUp();
       });
 
+      //MainContent Ajustment
+      var applyMapContainerHeight = function() {
+        var browserheight = $(window).height();
+        var headHeight = $('.region-header').outerHeight(true);
+        var footerHeight = $('.region-footer').outerHeight(true);
+        browserheight = browserheight - (headHeight + footerHeight);
+        $(".maincontent-wrapper").css('min-height', browserheight);
+      };
+
+      applyMapContainerHeight();
+
+      $(window).resize(function() {
+        applyMapContainerHeight();
+      });
+
     }
   };
 })(jQuery, Drupal);

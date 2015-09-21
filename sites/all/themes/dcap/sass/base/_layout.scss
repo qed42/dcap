@@ -13,3 +13,60 @@ body {
 .region-footer {
   width: 100%;
 }
+
+.panel-2col-stacked {
+  .preface-wrapper {
+    .panel-col-first {
+      background: $purple;
+      float: left;
+      width: 62%;
+    }
+    .panel-col-last {
+      background: $light-white;
+      float: right;
+      width: 38%;
+    }
+  }
+  .content-mid-wrapper {
+    overflow: hidden;
+  }
+}
+
+.preface-wrapper,
+.content-wrapper,
+.center-wrapper {
+  width: 100%;
+  overflow: hidden;
+  .panel-panel {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+  }
+}
+
+.panel-2col-stacked .panel-col-top .inside,
+.panel-2col-stacked .panel-col-first .inside,
+.panel-2col-stacked .panel-col-last .inside,
+.panel-2col-bricks .panel-col-top .inside,
+.panel-2col-bricks .panel-col-middle .inside {
+  margin: 0;
+}
+
+.panel-separator {
+  display: none;
+}
+
+.page {
+  color: $nav-text;
+}
+
+.pane-title {
+  font-size: 24px;
+  line-height: 35px;
+  padding: 0 0 12px;
+}
+
+.page-user {
+  #page-title {
+    display: none;
+  }
+}
