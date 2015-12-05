@@ -1,7 +1,11 @@
-	# Ignore configuration files that may contain sensitive information.
+# Ignore configuration files that may contain sensitive information.
 sites/default/settings*.php
 
 # Ignore paths that contain generated content.
 files/
 sites/*/files
 sites/*/private
+docroot/files
+docroot/sites/*/files
+docroot/sites/*/private
+
