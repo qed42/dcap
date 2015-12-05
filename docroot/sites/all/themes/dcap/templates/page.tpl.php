@@ -72,8 +72,12 @@
 
 <div class="page-wrapper">
   <div class="page">
-    <header>
-      <!-- banner -->
+    <header class="header">
+      <?php if ($logo): ?>
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+        <img src="<?php print $logo; ?>" alt="<?php print t('Home Page'); ?>" />
+      </a>
+      <?php endif; ?>
       <?php print render($page['header']); ?>
     </header>
 
@@ -117,7 +121,7 @@
       </div>
     </div>
     <?php if ($page['footer']): ?>
-      <footer>
+      <footer class="footer">
         <?php print render($page['footer']); ?>
       </footer> <!-- /#footer -->
     <?php endif; ?>

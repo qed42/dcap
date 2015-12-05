@@ -120,3 +120,11 @@ function dcap_field__taxonomy_term_reference($variables) {
 
   return $output;
 }
+
+/**
+ * Implements hook_js_alter().
+ */
+function dcap_js_alter(&$javascript) {
+  $javascript['sites/all/modules/contrib/flexslider/assets/js/flexslider.load.js']['scope'] = 'header';
+}
+

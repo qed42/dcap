@@ -71,3 +71,33 @@
   font-style: normal;
 }
 
+//Museo Sans
+@font-face {
+  font-family: 'museo sans 300';
+  src: url('../fonts/museosans/museo sans 300.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/museosans/museo sans 300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/museosans/museo sans 300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/museosans/museo sans 300.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/museosans/museo sans 300.otf') format('opentype'),
+       url('../fonts/museosans/museo sans 300.svg#museo sans 300') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'museo sans rounded 300';
+  src: url('../fonts/museosans/museo sans rounded 300.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/museosans/museo sans rounded 300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/museosans/museo sans rounded 300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/museosans/museo sans rounded 300.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/museosans/museo sans rounded 300.otf') format('opentype'),
+       url('../fonts/museosans/museo sans rounded 300.svg#museo sans rounded 300') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'museo sans rounded 700';
+  src: url('../fonts/museosans/museo sans rounded 700.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/museosans/museo sans rounded 700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/museosans/museo sans rounded 700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/museosans/museo sans rounded 700.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/museosans/museo sans rounded 700.otf') format('opentype'),
+       url('../fonts/museosans/museo sans rounded 700.svg#museo sans rounded 700') format('svg'); /* Legacy iOS */
+}

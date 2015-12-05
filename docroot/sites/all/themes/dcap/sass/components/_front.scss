@@ -385,3 +385,592 @@
     }
   }
 }
+
+
+/********* One Pager Site Homepage Starts Here *********/
+.region-content {
+  .pane-7 {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    img {
+      float: left;
+      max-width: 100%;
+      width: 100%;
+      @media #{$mobile} {
+        height: auto;
+        position: relative;
+        min-height: 360px;
+      }
+      @media #{$tab} {
+        min-height: auto;
+      }
+    }
+    .banner-wrapper {
+      @include box-sizing(border-box);
+      color: $white;
+      position: absolute;
+      width: 100%;
+      @media #{$mobile} {
+        bottom: auto;
+        padding: 0 10px;
+        top: 20%;
+      }
+      @media #{$tab} {
+        padding: 0 25px;
+        top: 25%;
+      }
+      @media #{$desktop} {
+        bottom: 150px;
+        top: auto;
+      }
+      @media #{$big-desktop} {
+        padding: 0 80px;
+      }
+      h2 {
+        font-family: 'museo sans rounded 700';
+        line-height: 1.1em;
+        margin: 0 0 15px;
+        @media #{$mobile} {
+          font-size: 30px;
+          max-width: 88%;
+          width: 100%;
+        }
+        @media #{$tab} {
+          font-size: 38px;
+          max-width: 40%;
+          width: 40%;
+        }
+        @media #{$desktop} {
+          font-weight: 60px;
+        }
+      }
+      p {
+        font-family: 'museo sans 300';
+        font-size: 16px;
+        line-height: 24px;
+        @media #{$mobile} {
+          max-width: 88%;
+          width: 100%;
+        }
+        @media #{$tab} {
+          max-width: 40%;
+          width: 40%;
+        }
+        &:nth-of-type(1) {
+          float: left;
+        }
+        &:nth-of-type(2) {
+          text-transform: uppercase;
+          @media #{$mobile} {
+            font-size: 14px;
+            float: left;
+            margin: 15px 0 0;
+          }
+          @media #{$tab} {
+            font-size: 15px;
+            float: right;
+            margin: -15px 0 0;
+          }
+          @media #{$desktop} {
+            font-size: 18px;
+          }
+        }
+        a {
+          background: $one-banner-back;
+          color: $white;
+          display: inline-block;
+          text-align: center;
+          @media #{$mobile} {
+            padding: 10px;
+          }
+          @media #{$tab} {
+            padding: 20px 18px;
+          }
+        }
+      }
+    }
+  }
+  .center-wrapper {
+    background: url('../images/one-back-pattern.png') top left repeat;
+    @media #{$mobile} {
+      padding: 10px;
+    }
+    @media #{$tab} {
+      padding: 25px;
+    }
+    @media #{$big-desktop} {
+      padding: 80px 80px 50px;
+    }
+    .panel-panel {
+      color: $one-center-text;
+      font-family: 'museo sans 300';
+      @media #{$mobile} {
+        font-size: 14px;
+        line-height: 22px;
+      }
+      @media #{$tab} {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      h2 {
+        color: $one-heading;
+        font-family: 'museo sans rounded 700';
+        @media #{$mobile} {
+          font-size: 24px;
+          margin: 0 0 12px;
+        }
+        @media #{$tab} {
+          font-size: 30px;
+          margin: 0 0 20px;
+        }
+      }
+      .pane-1 {
+        @media #{$mobile} {
+          padding: 10px 0;
+        }
+        @media #{$tab} {
+          background: url('../images/one-divider.png') center right no-repeat;
+          padding: 0 25px 0 0;
+        }
+        @media #{$big-desktop} {
+          padding: 0 80px 0 0;
+        }
+      }
+      .pane-4 {
+        @media #{$mobile} {
+          padding: 10px 0 0;
+        }
+        @media #{$tab} {
+          padding: 0 0 0 25px;
+        }
+        @media #{$big-desktop} {
+          padding: 0 0 0 80px;
+        }
+      }
+    }
+  }
+  .pane-3 {
+    @media #{$mobile} {
+      padding: 10px;
+    }
+    @media #{$tab} {
+      padding: 25px;
+    }
+    @media #{$big-desktop} {
+      padding: 40px 80px;
+    }
+    h2 {
+      color: $one-heading;
+      font-family: 'museo sans rounded 700';
+      text-align: center;
+      @media #{$mobile} {
+        font-size: 24px;
+        margin: 12px 0;
+      }
+      @media #{$tab} {
+        font-size: 30px;
+        margin: 0 0 30px;
+      }
+    }
+    .benefits-item {
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      @media #{$mobile} {
+        width: 100%
+      }
+      @media #{$tab} {
+        margin: 0 0 0 2%;
+        width: 23%;
+      }
+      &:first-child {
+        margin: 0;
+      }
+      &:nth-of-type(4) {
+        p {
+          margin: -10px 0 0;
+        }
+      }
+      img {
+        display: block;
+        margin: 15px auto;
+      }
+    }
+    p {
+      font-family: 'museo sans 300';
+      text-align: center;
+      @media #{$mobile} {
+        font-size: 14px;
+        line-height: 22px;
+      }
+      @media #{$tab} {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    a {
+      background: $one-banner-back;
+      color: $white;
+      display: inline-block;
+      text-align: center;
+      text-transform: uppercase;
+      @media #{$mobile} {
+        margin: 15px auto;
+        padding: 10px;
+      }
+      @media #{$tab} {
+        margin: 25px auto 10px;
+        padding: 20px 18px;
+      }
+      @media #{$big-desktop} {
+        margin: 80px auto 10px;
+      }
+    }
+  }
+  .panel-2col-bricks .panel-col-first,
+  .panel-2col-bricks .panel-col-last {
+    @media #{$mobile} {
+      width: 100%;
+    }
+    @media #{$tab} {
+      width: 50%;
+    }
+    .inside {
+      margin: 0;
+    }
+  }
+  .center-wrapper {
+    .pane-events-block-panel-pane-1,
+    .pane-2 {
+      @media #{$mobile} {
+        margin: 0;
+      }
+      @media #{$tab} {
+        margin: 0 1.5% 0 0;
+      }
+    }
+    .pane-2 {
+      @media #{$mobile} {
+        margin: 10px 0;
+      }
+      @media #{$tab} {
+        margin: 20px 1.5% 0 0;
+      }
+    }
+    .pane-events,
+    .pane-5,
+    .pane-6 {
+      @media #{$mobile} {
+        margin: 0;
+      }
+      @media #{$tab} {
+        margin: 0 0 0 1.5%;
+      }
+    }
+    .pane-5,
+    .pane-6 {
+      display: inline-block;
+      vertical-align: top;
+      @media #{$mobile} {
+        margin: 0;
+        width: 100%;
+      }
+      @media #{$smalltab} {
+        margin: 10px 0 0;
+        width: 49.6%;
+      }
+      @media #{$tab} {
+        margin: 20px 0 0 1.5%;
+        min-height: 347px;
+        width: 97%;
+      }
+      @media #{$desktop} {
+        width: 47%;
+      }
+      @media #{$big-desktop} {
+        width: 47.85%;
+      }
+      .fb-page.fb_iframe_widget {
+        width: 100% !important;
+        span,
+        iframe {
+          width: 100% !important;
+        }
+      }
+      iframe {
+        width: 100% !important;
+      }
+    }
+    .pane-5 {
+       #fb-root {
+         display: none;
+      }
+      @media #{$mobile} {
+        margin: 10px 0;
+      }
+      @media #{$tab} {
+        margin: 20px 0 0 1.5%;
+      }
+    }
+    .pane-events-block-panel-pane-1 {
+      background: $one-center-block1;
+      color: $white;
+      @media #{$mobile} {
+        padding: 15px;
+      }
+      @media #{$tab} {
+        min-height: 355px;
+        padding: 25px;
+      }
+      .pane-title {
+        color: $white;
+        font-family: 'museo sans rounded 700';
+        @media #{$mobile} {
+          font-size: 24px;
+          line-height: 22px;
+          margin: 0 0 12px;
+          width: 75%;
+        }
+        @media #{$tab} {
+          font-size: 30px;
+          line-height: 1.2em;
+          margin: 0 0 22px;
+        }
+        @media #{$desktop} {
+          width: 80%;
+        }
+      }
+      .view-footer {
+        font-family: 'museo sans rounded 300';
+        text-align: right;
+        @media #{$mobile} {
+          margin: 10px 0 0;
+        }
+        @media #{$tab} {
+          margin: 20px 0 0;
+        }
+        @media #{$desktop} {
+          margin: 0;
+        }
+        @media #{$big-desktop} {
+          margin: 20px 0 0;
+        }
+        a {
+          color: $one-flex-see;
+          font-size: 14px;
+        }
+      }
+    }
+    .flexslider {
+      @include rounded(0px);
+      background: none;
+      border: none;
+      margin: 0;
+      .views-field-field-image {
+        border: 3px solid $one-flex-img-border;
+        max-width: 320px;
+        @media #{$mobile} {
+          margin: 0 auto;
+          width: 100%;
+        }
+        @media #{$desktop} {
+          float: left;
+          margin: 0;
+          width: 53%
+        }
+      }
+      .views-field-title,
+      .views-field-field-synopsis {
+        float: left;
+        @media #{$mobile} {
+          margin: 10px 0;
+          width: 100%;
+        }
+        @media #{$desktop} {
+          margin: 0 0 0 18px;
+          width: 42%;
+        }
+        @media #{$big-desktop} {
+          margin: 0 0 0 22px;
+        }
+      }
+      .views-field-title {
+        font-family: 'museo sans rounded 700';
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        a {
+          color: $white;
+        }
+      }
+      .views-field-field-synopsis {
+        color: $white;
+        font-family: 'museo sans rounded 300';
+        font-size: 14px;
+        @media #{$desktop} {
+          margin: 8px 0 0;
+          width: 100%;
+        }
+        @media #{$big-desktop} {
+          margin: 0 0 0 22px;
+          width: 42%;
+        }
+        p {
+          color: $white !important;
+          font-family: 'museo sans rounded 300' !important;
+          font-size: 14px !important;
+          @media #{$desktop} {
+            margin: 0 !important;
+          }
+          @media #{$big-desktop} {
+            margin: 0 0 10px !important;
+          }
+        }
+        a {
+          color: $one-flex-anchor;
+        }
+      }
+      .flex-control-nav {
+        bottom: auto;
+        right: 0;
+        text-align: right;
+        width: 20%;
+        z-index: 100;
+        @media #{$mobile} {
+          top: -62px;
+        }
+        @media #{$large-mob} {
+          top: -45px;
+        }
+        @media #{$tab} {
+          top: -60px;
+        }
+      }
+      .flex-direction-nav {
+        display: none;
+      }
+      .flex-control-paging li a {
+        background: $one-flex-see;
+        color: transparent;
+        &.flex-active {
+          background: $white;
+        }
+      }
+    }
+    .pane-2 {
+      background: $white;
+      color: $one-touch-text;
+      @media #{$mobile} {
+        padding: 15px;
+      }
+      @media #{$tab} {
+        min-height: 347px;
+        padding: 25px;
+      }
+      h2 {
+        color: $one-footer-heading;
+        font-family: 'museo sans rounded 700';
+        @media #{$mobile} {
+          font-size: 24px;
+          margin: 0 0 12px;
+          padding: 0 0 12px
+        }
+        @media #{$tab} {
+          font-size: 30px;
+          margin: 0 0 22px;
+          padding: 0;
+        }
+      }
+      ul {
+        color: $one-footer-heading;
+        @media #{$mobile} {
+          font-size: 14px;
+        }
+        @media #{$tab} {
+          font-size: 16px;
+        }
+        li {
+          margin: 0 0 7px;
+          &:last-child {
+            margin: 0;
+          }
+          img, a {
+            display: inline-block;
+            vertical-align: top;
+          }
+          img {
+            margin: 0 15px 0 0;
+          }
+          a {
+            color: $one-touch-anchor;
+          }
+        }
+      }
+    }
+    .pane-events {
+      background: $white;
+      position: relative;
+      @media #{$mobile} {
+        padding: 15px;
+      }
+      @media #{$tab} {
+        padding: 25px;
+      }
+      @media #{$desktop} {
+        min-height: 355px;
+      }
+      @media only screen and (min-width:1800px) {
+        min-height: 365px;
+      }
+      h2 {
+        color: $one-footer-heading;
+        font-family: 'museo sans rounded 700';
+        @media #{$mobile} {
+          font-size: 24px;
+          margin: 0 0 12px;
+        }
+        @media #{$tab} {
+          font-size: 30px;
+          margin: 0 0 22px;
+        }
+      }
+      .view-id-events {
+        color: $one-event-text;
+        font-family: 'museo sans rounded 300';
+        font-size: 14px;
+        line-height: 24px;
+        .views-row {
+          border-left: 3px solid $one-event-border1;
+          padding: 0 0 0 15px;
+          margin: 0 0 15px;
+          &:nth-of-type(2n) {
+            border-left: 3px solid $one-event-border2;
+          }
+        }
+        h3 {
+          color: $one-event-heading;
+          font-family: 'museo sans rounded 700';
+          font-size: 16px;
+        }
+        .view-footer {
+          position: absolute;
+          text-align: right;
+          width: 92%;
+          @media #{$mobile} {
+            bottom: 15px;
+            right: 15px;
+          }
+          @media #{$tab} {
+            bottom: 25px;
+            right: 25px;
+          }
+          a {
+            display: inline-block;
+            color: $one-heading;
+          }
+        }
+      }
+    }
+  }
+}

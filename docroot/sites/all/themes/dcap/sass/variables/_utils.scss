@@ -73,3 +73,9 @@ $legacy-support-for-ie8: true;
   width: 100%;
   height: auto;
 }
+
+html {
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -o-text-size-adjust: none;
+}

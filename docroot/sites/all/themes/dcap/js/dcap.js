@@ -3,6 +3,30 @@
     attach: function(context, settings) {
       $.noConflict();
 
+      //Hamburger Menu
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || $(window).width() < 768) {
+        $('.header').prepend('<div class="hamburger-icon"></div>');
+
+        $('.header .hamburger-icon').click(function() {
+          if ($('.header .region-header').hasClass('menuopen')) {
+              $('.header .region-header').removeClass('menuopen');
+              $('.header .region-header').addClass('menuclose');
+          } else {
+            $('.header .region-header').addClass('menuopen');
+            $('.header .region-header').removeClass('menuclose');
+          }
+       });
+      $('.header .menu li a').click(function() {
+        if ($('.header .region-header').hasClass('menuopen')) {
+          $('.header .region-header').removeClass('menuopen');
+          $('.header .region-header').addClass('menuclose');
+        }
+      });
+      }
+      else {
+        $('.header').remove('.hamburger-icon');
+      }
+
       //Home Page Wish Block Heading Font
       var words = $('.pane-block-7 .wish-to-be-one > h2').text().split(' ');
       var html = '';
@@ -35,6 +59,7 @@
 
       $(window).resize(function() {
         applyMapContainerHeight();
+
       });
 
     }

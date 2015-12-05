@@ -213,6 +213,14 @@
  * @endcode
  */
 $databases = array();
+$databases['default']['default'] = array(
+  'driver' => 'mysql',
+  'database' => 'dcap_local',
+  'username' => 'root',
+  'password' => 'admin',
+  'host' => 'localhost',
+  'prefix' => '',
+);
 
 /**
  * Access control for update.php script.

@@ -1,45 +1,192 @@
 /* ----------Footer--------- */
-.region-footer {
-  background: $footer-color;
+// .region-footer {
+//   background: $footer-color;
+//   overflow: hidden;
+//   .menu {
+//     width: auto;
+//     margin: 20px 20px 20px 50px;
+//     li {
+//       border-right: 1px solid $footer-ul-color;
+//       display: inline-block;
+//       padding: 10px;
+//       vertical-align: top;
+//       a {
+//         cursor: pointer;
+//         display: block;
+//         height: 23px;
+//         text-indent: -9999px;
+//         width: 23px;
+//         &:hover {
+//           color: $nav-active;
+//         }
+//       }
+//       &.fb-icon {
+//         a {
+//           background: url('../images/grey-fb-icon.png') top left no-repeat;
+//         }
+//       }
+//       &.twitter-icon {
+//         a {
+//           background: url('../images/grey-tw-icon.png') top left no-repeat;
+//           width: 27px;
+//         }
+//       }
+//       &.instagram-icon {
+//         a {
+//           background: url('../images/grey-inst-icon.png') top left no-repeat;
+//         }
+//       }
+//       &.gplus-icon {
+//         a {
+//           background: url('../images/grey-g-plus-icon.png') top left no-repeat;
+//           width: 26px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+/********** One Pager Footer Theming *********/
+
+.footer {
+  color: $one-footer-text;
+  font-family: 'museo sans 300';
+  font-size: 14px;
+  line-height: 1.2em;
   overflow: hidden;
-  .menu {
-    width: auto;
-    margin: 20px 20px 20px 50px;
-    li {
-      border-right: 1px solid $footer-ul-color;
-      display: inline-block;
-      padding: 10px;
-      vertical-align: top;
-      a {
-        cursor: pointer;
-        display: block;
-        height: 23px;
-        text-indent: -9999px;
-        width: 23px;
-        &:hover {
-          color: $nav-active;
+  width: 100%;
+  @media #{$mobile} {
+    padding: 10px;
+  }
+  @media #{$tab} {
+    padding: 25px;
+  }
+  @media #{$big-desktop} {
+    padding: 30px 80px;
+  }
+  a,
+  li a {
+    color: $one-footer-anchor;
+    display: inline-block;
+    @media #{$mobile} {
+      margin: 0 0 10px;
+    }
+    @media #{$tab} {
+      margin: 0 0 10px;
+    }
+    @media #{$big-desktop} {
+      margin: 0 0 15px;
+    }
+  }
+  .panel-pane {
+    float: left;
+    @media #{$mobile} {
+      width: 100%;
+    }
+    @media #{$smalltab} {
+      width: 50%;
+    }
+    @media #{$desktop} {
+      width: 25%;
+    }
+    &.pane-block {
+      @include box-sizing(border-box);
+      @media #{$mobile} {
+        padding: 10px 0;
+      }
+      @media #{$tab} {
+        padding: 0 10px 0 0;
+      }
+      @media #{$big-desktop} {
+        padding: 0 30px 0 0;
+      }
+    }
+    &.pane-menu-menu-follow-us-on-social-media {
+      @media #{$mobile} {
+        padding: 10px 0;
+      }
+      @media #{$tab} {
+        padding: 0;
+      }
+      .menu {
+        overflow: hidden;
+        li {
+          float: left;
+          width: 48%;
+          &:nth-child(2n) {
+            float: right;
+          }
         }
       }
-      &.fb-icon {
-        a {
-          background: url('../images/grey-fb-icon.png') top left no-repeat;
-        }
-      }
-      &.twitter-icon {
-        a {
-          background: url('../images/grey-tw-icon.png') top left no-repeat;
-          width: 27px;
-        }
-      }
-      &.instagram-icon {
-        a {
-          background: url('../images/grey-inst-icon.png') top left no-repeat;
-        }
-      }
-      &.gplus-icon {
-        a {
-          background: url('../images/grey-g-plus-icon.png') top left no-repeat;
-          width: 26px;
+    }
+  }
+  #block-panels-mini-footer-top {
+    @media #{$mobile} {
+      width: 100%;
+    }
+    @media #{$desktop} {
+      float: right;
+      width: 80%;
+    }
+  }
+  #block-block-13 {
+    @media #{$mobile} {
+      text-align: center;
+    }
+    @media #{$smalltab} {
+      width: 100%;
+    }
+    @media #{$tab} {
+      padding: 0 10px 0 0;
+    }
+    @media #{$desktop} {
+      float: left;
+      text-align: left;
+      width: 20%;
+    }
+    @media #{$big-desktop} {
+      padding: 0 30px 0 0;
+    }
+  }
+  .pane-title {
+    color: $one-footer-heading;
+    font-family: 'museo sans rounded 700';
+    padding: 0;
+    @media #{$mobile} {
+      font-size: 14px;
+      line-height: 22px;
+      margin: 0 0 15px;
+    }
+    @media #{$tab} {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 15px;
+    }
+    @media #{$big-desktop} {
+      margin: 0 0 25px;
+    }
+  }
+  .footer-copyright {
+    font-size: 12px;
+    @media #{$mobile} {
+      margin: 10px 0;
+    }
+    @media #{$tab} {
+      margin: 15px 0;
+    }
+    @media #{$big-desktop} {
+      margin: 30px 0;
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+    .copyright {
+      p {
+        margin: 2px 0 0;
+        &:first-child {
+          margin: 8px 0 0;
         }
       }
     }
