@@ -425,6 +425,88 @@ body {
   display: none;
 }
 
+div.modal-forms-modal-content form {
+  padding: 30px;
+}
+div.modal-forms-modal-content form .form-item {
+  background: transparent;
+  font-family: 'museo sans 300';
+  font-weight: normal;
+  margin: 0 auto;
+  padding: 12px 20px;
+  vertical-align: top;
+}
+div.modal-forms-modal-content form .form-item:first-of-type {
+  padding: 0 20px 12px;
+}
+div.modal-forms-modal-content form .form-item label {
+  font-size: 18px;
+  line-height: 28px;
+}
+div.modal-forms-modal-content form .form-item label.option {
+  font-size: 16px;
+}
+div.modal-forms-modal-content form .form-item input,
+div.modal-forms-modal-content form .form-item textarea {
+  -webkit-box-shadow: inset 0 0 5px #ebebeb;
+  -moz-box-shadow: inset 0 0 5px #ebebeb;
+  box-shadow: inset 0 0 5px #ebebeb;
+  font-family: 'museo sans 300';
+  font-size: 16px;
+  width: 100%;
+}
+div.modal-forms-modal-content form .form-item .form-radios .form-type-radio {
+  width: 35%;
+}
+div.modal-forms-modal-content form .form-item .form-radios .form-type-radio:first-of-type {
+  padding: 0;
+}
+div.modal-forms-modal-content form .form-actions {
+  margin: 12px auto 0;
+  padding: 0 20px 20px;
+}
+div.modal-forms-modal-content form .form-actions input[type='submit'] {
+  background: #0878be;
+  font-family: 'museo sans 300';
+  font-weight: normal;
+  font-size: 20px;
+  padding: 12px 32px;
+}
+div.modal-forms-modal-content .popups-title {
+  background: #575757;
+  min-height: auto;
+  padding: 12px 22px;
+}
+div.modal-forms-modal-content .modal-title {
+  color: #fff;
+  font-family: 'museo sans 300';
+  font-weight: normal;
+}
+@media only screen {
+  div.modal-forms-modal-content .modal-title {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  div.modal-forms-modal-content .modal-title {
+    font-size: 30px;
+  }
+}
+div.modal-forms-modal-content .popups-close {
+  background: url("../images/pop_close.png") 0 0 no-repeat;
+  background-size: contain;
+  height: 34px;
+  width: 34px;
+}
+div.modal-forms-modal-content .popups-close:hover {
+  background-position: 0 0;
+}
+
+div.ctools-modal-content .modal-content {
+  padding: 0;
+  width: 100% !important;
+}
+
 /****** Blog Listing Page Style Starts ******/
 .pane-1 {
   overflow: hidden;
