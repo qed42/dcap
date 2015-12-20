@@ -426,25 +426,82 @@ body {
 }
 
 div.modal-forms-modal-content form {
-  padding: 30px;
+  margin: 0 auto;
+}
+@media only screen {
+  div.modal-forms-modal-content form {
+    padding: 15px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  div.modal-forms-modal-content form {
+    padding: 30px;
+  }
+}
+@media only screen and (min-width: 1181px) {
+  div.modal-forms-modal-content form {
+    width: 90%;
+  }
 }
 div.modal-forms-modal-content form .form-item {
   background: transparent;
   font-family: 'museo sans 300';
   font-weight: normal;
   margin: 0 auto;
-  padding: 12px 20px;
   vertical-align: top;
 }
-div.modal-forms-modal-content form .form-item:first-of-type {
-  padding: 0 20px 12px;
+@media only screen {
+  div.modal-forms-modal-content form .form-item {
+    padding: 0 0 12px;
+    width: 100%;
+  }
 }
-div.modal-forms-modal-content form .form-item label {
-  font-size: 18px;
-  line-height: 28px;
+@media only screen and (min-width: 768px) {
+  div.modal-forms-modal-content form .form-item {
+    padding: 12px 20px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  div.modal-forms-modal-content form .form-item {
+    width: 75%;
+  }
+}
+@media only screen {
+  div.modal-forms-modal-content form .form-item:first-of-type {
+    padding: 0 0 12px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  div.modal-forms-modal-content form .form-item:first-of-type {
+    padding: 0 20px 12px;
+  }
+}
+@media only screen {
+  div.modal-forms-modal-content form .form-item label {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  div.modal-forms-modal-content form .form-item label {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 div.modal-forms-modal-content form .form-item label.option {
+  display: inline-block;
   font-size: 16px;
+}
+@media only screen {
+  div.modal-forms-modal-content form .form-item label.option {
+    padding: 8px 0 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  div.modal-forms-modal-content form .form-item label.option {
+    padding: 5px 0 0;
+  }
 }
 div.modal-forms-modal-content form .form-item input,
 div.modal-forms-modal-content form .form-item textarea {
@@ -455,11 +512,50 @@ div.modal-forms-modal-content form .form-item textarea {
   font-size: 16px;
   width: 100%;
 }
-div.modal-forms-modal-content form .form-item .form-radios .form-type-radio {
-  width: 35%;
+@media only screen {
+  div.modal-forms-modal-content form .form-item input,
+  div.modal-forms-modal-content form .form-item textarea {
+    padding: 8px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  div.modal-forms-modal-content form .form-item input,
+  div.modal-forms-modal-content form .form-item textarea {
+    padding: 10px;
+  }
+}
+@media only screen {
+  div.modal-forms-modal-content form .form-item .form-radios .form-type-radio {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 480px) {
+  div.modal-forms-modal-content form .form-item .form-radios .form-type-radio {
+    width: 49%;
+  }
+}
+@media only screen and (min-width: 1181px) {
+  div.modal-forms-modal-content form .form-item .form-radios .form-type-radio {
+    width: 35%;
+  }
 }
 div.modal-forms-modal-content form .form-item .form-radios .form-type-radio:first-of-type {
   padding: 0;
+}
+@media only screen {
+  div.modal-forms-modal-content form .form-item .form-radios .form-type-radio input[type='radio'] {
+    margin: 10px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  div.modal-forms-modal-content form .form-item .form-radios .form-type-radio input[type='radio'] {
+    margin: 10px 2%;
+  }
+}
+@media only screen and (min-width: 568px) {
+  div.modal-forms-modal-content form .form-item .form-radios .form-type-radio input[type='radio'] {
+    margin: 10px;
+  }
 }
 div.modal-forms-modal-content form .form-actions {
   margin: 12px auto 0;
@@ -469,18 +565,48 @@ div.modal-forms-modal-content form .form-actions input[type='submit'] {
   background: #0878be;
   font-family: 'museo sans 300';
   font-weight: normal;
-  font-size: 20px;
-  padding: 12px 32px;
+  outline: none;
+}
+@media only screen {
+  div.modal-forms-modal-content form .form-actions input[type='submit'] {
+    margin: 0 0 20px;
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  div.modal-forms-modal-content form .form-actions input[type='submit'] {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  div.modal-forms-modal-content form .form-actions input[type='submit'] {
+    font-size: 20px;
+    padding: 12px 32px;
+  }
 }
 div.modal-forms-modal-content .popups-title {
   background: #575757;
   min-height: auto;
-  padding: 12px 22px;
+  overflow: hidden;
+}
+@media only screen {
+  div.modal-forms-modal-content .popups-title {
+    padding: 12px 18px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  div.modal-forms-modal-content .popups-title {
+    padding: 12px 22px;
+  }
 }
 div.modal-forms-modal-content .modal-title {
   color: #fff;
   font-family: 'museo sans 300';
   font-weight: normal;
+  float: left;
+  width: 80%;
+  white-space: normal;
 }
 @media only screen {
   div.modal-forms-modal-content .modal-title {
