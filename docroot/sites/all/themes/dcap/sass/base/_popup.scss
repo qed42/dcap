@@ -1,21 +1,58 @@
 div.modal-forms-modal-content {
   form {
-    padding: 30px;
+    margin: 0 auto;
+    @media #{$mobile} {
+      padding: 15px;
+      width: 100%;
+    }
+    @media #{$tab} {
+      padding: 30px;
+    }
+    @media #{$big-desktop} {
+      width: 90%;
+    }
     .form-item {
       background: transparent;
       font-family: 'museo sans 300';
       font-weight: normal;
       margin: 0 auto;
-      padding: 12px 20px;
       vertical-align: top;
+      @media #{$mobile} {
+        padding: 0 0 12px;
+        width: 100%;
+      }
+      @media #{$tab} {
+        padding: 12px 20px;
+      }
+      @media #{$desktop} {
+        width: 75%;
+      }
       &:first-of-type {
-        padding: 0 20px 12px;
+        @media #{$mobile} {
+          padding: 0 0 12px;
+        }
+        @media #{$tab} {
+          padding: 0 20px 12px;
+        }
       }
       label {
-        font-size: 18px;
-        line-height: 28px;
-        &.option {
+        @media #{$mobile} {
           font-size: 16px;
+          line-height: 20px;
+        }
+        @media #{$tab} {
+          font-size: 18px;
+          line-height: 28px;
+        }
+        &.option {
+          display: inline-block;
+          font-size: 16px;
+          @media #{$mobile} {
+            padding: 8px 0 0;
+          }
+          @media #{$tab} {
+            padding: 5px 0 0;
+          }
         }
       }
       input,
@@ -24,12 +61,37 @@ div.modal-forms-modal-content {
         font-family: 'museo sans 300';
         font-size: 16px;
         width: 100%;
+        @media #{$mobile} {
+          padding: 8px;
+        }
+        @media #{$tab} {
+          padding: 10px;
+        }
       }
       .form-radios {
         .form-type-radio {
-          width: 35%;
+          @media #{$mobile} {
+            width: 100%;
+          }
+          @media #{$large-mob} {
+            width: 49%;
+          }
+          @media #{$big-desktop} {
+            width: 35%;
+          }
           &:first-of-type {
             padding: 0;
+          }
+          input[type='radio'] {
+            @media #{$mobile} {
+              margin: 10px;
+            }
+            @media #{$large-mob} {
+              margin: 10px 2%;
+            }
+            @media #{$smalltab} {
+              margin: 10px;
+            }
           }
         }
       }
@@ -41,20 +103,40 @@ div.modal-forms-modal-content {
         background: $one-nav-text;
         font-family: 'museo sans 300';
         font-weight: normal;
-        font-size: 20px;
-        padding: 12px 32px;
+        outline: none;
+        @media #{$mobile} {
+          margin: 0 0 20px;
+          font-size: 18px;
+          padding: 12px 24px;
+        }
+        @media #{$large-mob} {
+          margin: 0;
+        }
+        @media #{$tab} {
+          font-size: 20px;
+          padding: 12px 32px;
+        }
       }
     }
   }
   .popups-title {
     background: #575757;
     min-height: auto;
-    padding: 12px 22px;
+    overflow: hidden;
+    @media #{$mobile} {
+      padding: 12px 18px;
+    }
+    @media #{$tab} {
+      padding: 12px 22px;
+    }
   }
   .modal-title {
     color: $white;
     font-family: 'museo sans 300';
     font-weight: normal;
+    float: left;
+    width: 80%;
+    white-space: normal;
     @media #{$mobile} {
       font-size: 24px;
     }
