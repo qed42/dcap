@@ -3,9 +3,34 @@
     attach: function(context, settings) {
       $.noConflict();
 
+    }
+  };
+})(jQuery, Drupal);
+
+
+(function($) {
+
+  $(document).ready(function() {
+
+    //MainContent Ajustment
+    var applyMapContainerHeight = function() {
+      var browserheight = $(window).height();
+      var headHeight = $('.region-header').outerHeight(true);
+      var footerHeight = $('.region-footer').outerHeight(true);
+      browserheight = browserheight - (headHeight + footerHeight);
+      $(".maincontent-wrapper").css('min-height', browserheight);
+    };
+
+    applyMapContainerHeight();
+
+    $(window).resize(function() {
+      applyMapContainerHeight();
+
+    });
+
+    $('.header').prepend('<div class="hamburger-icon"></div>');
       //Hamburger Menu
       if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || $(window).width() < 768) {
-        $('.header').prepend('<div class="hamburger-icon"></div>');
 
         $('.header .hamburger-icon').click(function() {
           if ($('.header .region-header').hasClass('menuopen')) {
@@ -46,22 +71,6 @@
         $bgs.not($target).filter(':visible').stop(true, true).slideUp();
       });
 
-      //MainContent Ajustment
-      var applyMapContainerHeight = function() {
-        var browserheight = $(window).height();
-        var headHeight = $('.region-header').outerHeight(true);
-        var footerHeight = $('.region-footer').outerHeight(true);
-        browserheight = browserheight - (headHeight + footerHeight);
-        $(".maincontent-wrapper").css('min-height', browserheight);
-      };
+  });
 
-      applyMapContainerHeight();
-
-      $(window).resize(function() {
-        applyMapContainerHeight();
-
-      });
-
-    }
-  };
-})(jQuery, Drupal);
+})(jQuery);
