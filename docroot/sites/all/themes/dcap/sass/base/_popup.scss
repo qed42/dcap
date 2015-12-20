@@ -1,0 +1,81 @@
+div.modal-forms-modal-content {
+  form {
+    padding: 30px;
+    .form-item {
+      background: transparent;
+      font-family: 'museo sans 300';
+      font-weight: normal;
+      margin: 0 auto;
+      padding: 12px 20px;
+      vertical-align: top;
+      &:first-of-type {
+        padding: 0 20px 12px;
+      }
+      label {
+        font-size: 18px;
+        line-height: 28px;
+        &.option {
+          font-size: 16px;
+        }
+      }
+      input,
+      textarea {
+        @include box-shadow(0, 0, 5px, $greyish-white, $inset: true);
+        font-family: 'museo sans 300';
+        font-size: 16px;
+        width: 100%;
+      }
+      .form-radios {
+        .form-type-radio {
+          width: 35%;
+          &:first-of-type {
+            padding: 0;
+          }
+        }
+      }
+    }
+    .form-actions {
+      margin: 12px auto 0;
+      padding: 0 20px 20px;
+      input[type='submit'] {
+        background: $one-nav-text;
+        font-family: 'museo sans 300';
+        font-weight: normal;
+        font-size: 20px;
+        padding: 12px 32px;
+      }
+    }
+  }
+  .popups-title {
+    background: #575757;
+    min-height: auto;
+    padding: 12px 22px;
+  }
+  .modal-title {
+    color: $white;
+    font-family: 'museo sans 300';
+    font-weight: normal;
+    @media #{$mobile} {
+      font-size: 24px;
+    }
+    @media #{$tab} {
+      font-size: 30px;
+    }
+  }
+  .popups-close {
+    background: url('../images/pop_close.png') 0 0 no-repeat;
+    background-size: contain;
+    height: 34px;
+    width: 34px;
+    &:hover {
+      background-position: 0 0;
+    }
+  }
+}
+
+div.ctools-modal-content {
+  .modal-content {
+    padding: 0;
+    width: 100% !important;
+  }
+}
