@@ -215,9 +215,9 @@
 $databases = array();
 $databases['default']['default'] = array(
   'driver' => 'mysql',
-  'database' => 'drupalcap',
+  'database' => 'dcap',
   'username' => 'root',
-  'password' => 'admin',
+  'password' => 'root',
   'host' => 'localhost',
   'prefix' => '',
 );
